@@ -1,0 +1,21 @@
+[
+    {
+       "activityName": "Ghetto Golf",
+       "filterCategory": ["active", "fun", "random"],
+       "ageRange": "18+",
+       "cost": "Starting at £12 PP",
+       "image": "https://i2-prod.birminghammail.co.uk/incoming/article13748513.ece/ALTERNATES/s615b/DQP_BEM_111017GHETTOGOLF_18JPG.jpg",
+       "description": "Ghetto Golf is an ode to Street Art, its Writers and its Origins. Our concept combines crazy golf, theatre, cocktails, DJ’s and Street Food in an art infused environment that showcases the very best street art, it's writers and its culture. Ghetto Golf is a ‘Sprayground’ we provide the Graff Writers, with golf courses built into weird and wonderful designs such as buses, shop fronts, film studios and pubs… the list is endless and nothing is off limits.",
+       "website": "https://www.ghettogolf.co.uk/birmingham",
+       "googleMapLink": "https://www.google.com/maps/dir/52.4916015,-1.9265017/google+maps+ghetto+golf+link+birmingham/@52.4789559,-1.9366931,13z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x4870bc8058afaf77:0x11189ca2d4ec9221!2m2!1d-1.8833766!2d52.4759361"
+    }, {
+        "activityName": "Battle Archery Tag",
+        "filterCategory": ["active", "fun", "random"],
+        "ageRange": "11+",
+        "cost": "£25 PP",
+        "image": "",
+        "description": "",
+        "website": "https://www.npfbassettspole.com/activities/battle-archery",
+        "googleMapLink": "https://www.google.com/maps/dir/52.4916015,-1.9265017/NPF+Bassetts+Pole+Adventure+Park,+London+Road,+Bassetts+Pole,+Birmingham/@52.5405093,-1.9187079,12z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x4870af598603d065:0xfa9d683fbf39d5fa!2m2!1d-1.778243!2d52.591281"
+    }
+]
