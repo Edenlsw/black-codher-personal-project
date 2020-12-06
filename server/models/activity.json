@@ -49,9 +49,63 @@
         "filterCategory": ["family", "culture", "random"],
         "ageRange": "Any",
         "cost": "£35 PP",
-        "image": "",
+        "image": "http://vintagetrains.co.uk/uploads/images/SE-7-9-14-Andy-Garsed-1280x957-870x325.jpg",
         "description": "Enjoy a return trip to world famous Stratford upon Avon with hot breakfast rolls on the way there.  In Stratford you have around 4 hours to explore before we take you back to Birmingham Snow Hill.  Treat yourself to a packed lunch picnic box containing a selection of sandwiches, cake and scones with jam and cream to unpack in Stratford or eat on the journey back to Birmingham. ",
         "website": "http://www.vintagetrains.co.uk/the-shakespeare-express.aspx",
         "googleMapLink": ""
+    }, {
+        "activityName": "Peaky Blinders Tour",
+        "filterCategory": ["culture", "random"],
+        "ageRange": "16 +",
+        "cost": "£34.95 PP",
+        "image": "https://www.peakytours.com/images/gallery/1371-165504d3498118a1ba1d70b4f2063127/564.jpg",
+        "description": "The Peaky Blinders Full Day Tour is a guided coach tour of sites from the award winning TV crime drama Peaky Blinders which follows the exploits of the Shelby family, better known as the Peaky Blinders gang.",
+        "website": "https://www.peakytours.com/",
+        "googleMapLink": ""
+    }, {
+        "activityName": "A Tolkien Tour of Birmingham",
+        "filterCategory": ["culture", "random"],
+        "ageRange": "",
+        "cost": "Starting from £3",
+        "image": "https://www.birminghamupdates.com/wp-content/uploads/2019/06/The-Hobbit-at-Sarehole-Mill.jpg",
+        "description": "Take a tour around Birmingham to see the sights that inspired Tolkien when writing Lord of The Rings",
+        "website": "https://www.birminghamupdates.com/a-tolkien-tour-of-birmingham/",
+        "googleMapLink": ""
+    }, {
+        "activityName": "Black Country Museum",
+        "filterCategory": ["culture", "random", "family"],
+        "ageRange": "£9.95 +",
+        "cost": "Starting from £3",
+        "image": "https://www.birminghamupdates.com/wp-content/uploads/2019/06/The-Hobbit-at-Sarehole-Mill.jpg",
+        "description": "Black Country Living Museum is a remarkable place to explore, enjoy and spend time. Set in a landscape of 26 acres, it is one of the most extraordinary open-air museums in the UK; offering a glimpse into 300 years of history like no other.",
+        "website": "https://www.bclm.co.uk/",
+        "googleMapLink": "https://www.google.com/maps/place/Black+Country+Living+Museum/@52.5200852,-2.0774505,17z/data=!3m1!4b1!4m5!3m4!1s0x487099fc92a3ad61:0x80fb90ace73738fb!8m2!3d52.5200852!4d-2.0752618"
+    }, {
+        "activityName": "Cadbury World",
+        "filterCategory": ["family", "culture", "random"],
+        "ageRange": "Any",
+        "cost": "£13.25 +",
+        "image": "https://www.birminghamupdates.com/wp-content/uploads/2020/07/Cadbury-World-scaled.jpg",
+        "description": "Cadbury World is a visitor attraction in Birmingham, England, featuring a self-guided exhibition tour, created and run by the Cadbury Company. The tour tells the history of chocolate, and of the Cadbury business.",
+        "website": "https://www.cadburyworld.co.uk/en",
+        "googleMapLink": "https://www.google.com/maps/search/?api=1&query=Cadbury%20World%2C%20Birmingham&query_place_id=ChIJHzt8RH--cEgRG_BZe63Qjng"
+    }, {
+        "activityName": "Botanical Gardens",
+        "filterCategory": ["nature", "family"],
+        "ageRange": "Any",
+        "cost": "£7.50 PP",
+        "image": "https://www.parksandgardens.org/assets/uploads/places/_1200xAUTO_fit_center-center_none/pgds_20080804-104156_7-august-2005-1.jpg",
+        "description": "The Botanical Garden is a controlled and staffed institution for the maintenance of a living collection of plants under scientific management for purposes of education and research, together with such libraries, herbaria, laboratories, and museums as are essential to its particular undertakings.",
+        "website": "https://www.birminghambotanicalgardens.org.uk/",
+        "googleMapLink": "https://www.google.com/maps/dir//botanical+gardens/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x4870bc5332a14a21:0x5a9d81904b6f7785?sa=X&ved=2ahUKEwiHk6HB17ntAhUNmhQKHabjAI8Q9RcwAHoECBIQBQ"
+    }, {
+        "activityName": "Lickey Hills Country Park",
+        "filterCategory": ["nature", "family", "random"],
+        "ageRange": "Any",
+        "cost": "Free",
+        "image": "https://i.pinimg.com/originals/bb/7b/10/bb7b107a5237040171987f7c14007947.jpg",
+        "description": "Lickey Hills Country Park is one of Birmingham’s most varied and treasured parks. It covers 524 acres and is located just 10 miles south west of Birmingham. The park offers different things to different people - it’s a place for family days out, to spot wildlife, for sport, school trips, or maybe just for the views and a cup of tea.",
+        "website": "https://www.birmingham.gov.uk/info/20089/parks/406/lickey_hills_country_park",
+        "googleMapLink": "https://www.google.com/maps/dir//lickey+hills+country+park+maps/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x4870950e053774d9:0xa5684d09371aea00?sa=X&ved=2ahUKEwif8Pag37ntAhWnQUEAHcfYAwoQ9RcwEXoECB4QBA"
     }
 ]
