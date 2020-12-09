@@ -107,5 +107,138 @@
         "description": "Lickey Hills Country Park is one of Birmingham’s most varied and treasured parks. It covers 524 acres and is located just 10 miles south west of Birmingham. The park offers different things to different people - it’s a place for family days out, to spot wildlife, for sport, school trips, or maybe just for the views and a cup of tea.",
         "website": "https://www.birmingham.gov.uk/info/20089/parks/406/lickey_hills_country_park",
         "googleMapLink": "https://www.google.com/maps/dir//lickey+hills+country+park+maps/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x4870950e053774d9:0xa5684d09371aea00?sa=X&ved=2ahUKEwif8Pag37ntAhWnQUEAHcfYAwoQ9RcwEXoECB4QBA"
+    }, {
+        "activityName": "National SEA LIFE Centre",
+        "filterCategory": ["family", "random", "nature"],
+        "ageRange": "Any",
+        "cost": "£18.30 +",
+        "image": "https://www.visitsealife.com/birmingham/media/3imaylzj/ocean-tunnel-campaign-shot.jpg",
+        "description": "",
+        "website": "https://www.visitsealife.com/birmingham/",
+        "googleMapLink": "https://www.google.com/maps/dir//sea+life+centre/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x4870bcf6b57ad8c5:0x4d5f94ec4839ee09?sa=X&ved=2ahUKEwiHh7XXgL_tAhVUr3EKHaxwBn4Q9RcwHnoECDAQBA"
+    }, {
+        "activityName": "Thinktank Science Museum",
+        "filterCategory": ["family", "random"],
+        "ageRange": "Any",
+        "cost": "£10.25 + ",
+        "image": "https://assets.simpleview-europe.com/birmingham-visit/imageresizer/?image=%2Fdmsimgs%2FSpitfireatThinktank_website_1063907455.jpg&action=ProductDetailProFullWidth",
+        "description": "",
+        "website": "https://www.birminghammuseums.org.uk/thinktank",
+        "googleMapLink": "https://www.google.com/maps/dir//thinktank/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x4870bc83bbb404df:0x7b40572139ead297?sa=X&ved=2ahUKEwjZ8tbPgb_tAhVTThUIHX34D54Q9RcwEnoECCUQBQ"
+    }, {
+        "activityName": "Treasure Trails",
+        "filterCategory": ["family", "random"],
+        "ageRange": "Any",
+        "cost": "£9.99",
+        "image": "https://www.treasuretrails.co.uk/sites/default/files/product-images/the-birmingham-venice-of-the-north-treasure-hunt-trail-fan.jpg?itok=MyVysyC8",
+        "description": "",
+        "website": "https://www.treasuretrails.co.uk/",
+        "googleMapLink": ""
+    }, {
+        "activityName": "Rush Trampoline Park",
+        "filterCategory": ["family", "fun", "random"],
+        "ageRange": "3+",
+        "cost": "£9.50 +",
+        "image": "https://www.rushuk.com/uploads/generalImages/RUSH-BIRMINGHAM-LAUNCH-PARTY-205.jpg",
+        "description": "",
+        "website": "https://www.rushuk.com/",
+        "googleMapLink": "https://www.google.com/maps/dir//rush+trampoline+park/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x4870be87a654ea79:0x332cf02fc9820747?sa=X&ved=2ahUKEwiW1MCahb_tAhXaQkEAHdzMCIQQ9RcwHXoECC8QBA"
+    }, {
+        "activityName": "Foot Golf",
+        "filterCategory": ["fun", "family", "active", "random"],
+        "ageRange": "11 +",
+        "cost": "£11 +",
+        "image": "https://foot-golf-uk.com/wpcms/wp-content/uploads/2018/10/Image-2-2-852x567.jpg",
+        "description": "",
+        "website": "https://foot-golf-uk.com/",
+        "googleMapLink": ""
+    }, {
+        "activityName": "Lane 7",
+        "filterCategory": ["active", "fun", "family"], 
+        "ageRange": "Any",
+        "cost": "£6 +",
+        "image": "https://lane7.co.uk/wp-content/uploads/2018/09/img-gallery-birmingham-bowling-002.jpg",
+        "description": "",
+        "website": "https://lane7.co.uk/",
+        "googleMapLink": "https://www.google.com/maps/dir//lane+7+birmingham/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x4870bd1e5c3ae7f1:0x83bf9bf9fbfdc816?sa=X&ved=2ahUKEwi3g4O3i7_tAhVStHEKHa18AGgQ9RcwDXoECBQQBA"
+    }, {
+        "activityName": "Whistle Punks Axe Throwing",
+        "filterCategory": ["fun", "random"],
+        "ageRange": "18 +",
+        "cost": "£58",
+        "image": "https://i.ytimg.com/vi/FANTojwY4yA/maxresdefault.jpg",
+        "description": "",
+        "website": "https://whistlepunks.com/",
+        "googleMapLink": "https://www.google.com/maps/dir//whistle+punk+axe+throwing/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x4870bc60024158c1:0x354f7a8a25c348a4?sa=X&ved=2ahUKEwixquf3jL_tAhX7UxUIHVsKBJAQ9RcwGXoECCwQBA"
+
+    }, { 
+        "activityName": "Clue HQ",
+        "filterCategory": ["fun", "random", "family"],
+        "ageRange": "10+",
+        "cost": "£18 +",
+        "image": "https://i.ytimg.com/vi/RJrPYta4I4o/maxresdefault.jpg",
+        "description": "",
+        "website": "https://cluehq.co.uk/",
+        "googleMapLink": "https://www.google.com/maps/dir//clue+hq+birmingham/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x4870bc927181270d:0x633ece2002ecf1ff?sa=X&ved=2ahUKEwighc2emb_tAhXXTxUIHXqyBM8Q9RcwFnoECB0QBA"
+
+    }, {
+        "activityName": "Martineau Gardens",
+        "filterCategory": ["nature", "family", "random"],
+        "ageRange": "Any",
+        "cost": "£0",
+        "image": "https://assets.simpleview-europe.com/birmingham-makeitwm/imageresizer/?image=%2Fdmsimgs%2Fmartineaugardens_website_446128840.jpg&action=ProductDetailProFullWidth",
+        "description": "",
+        "website": "https://martineau-gardens.org.uk/",
+        "googleMapLink": "https://www.google.com/maps/dir//martineau+gardens/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x4870bc46b98e0fc7:0x680b73f31d4e4e8c?sa=X&ved=2ahUKEwjk4-mXn7_tAhVRRxUIHbg1DK8Q9RcwGXoECCgQBA"
+
+    }, {
+        "activityName": "Kingsbury Water Park",
+        "filterCategory": ["nature", "random", "family"],
+        "ageRange": "Any",
+        "cost": "£0",
+        "image": "https://letsgowiththechildren.co.uk/wp-content/uploads/2016/12/Kingsbury-Water-Park-1-915px.jpg",
+        "description": "",
+        "website": "https://countryparks.warwickshire.gov.uk/kingsburywaterpark",
+        "googleMapLink": "https://www.google.com/maps/dir//kingsbury+water+park/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x4870ae6250e73119:0x52ace2358cfff36d?sa=X&ved=2ahUKEwjKoOT9n7_tAhWnUhUIHUbjDFsQ9RcwHnoECDIQBA"
+
+
+    }, {
+        "activityName": "Winterbourne House & Garden",
+        "filterCategory": ["nature", "family", "random"],
+        "ageRange": "Any",
+        "cost": "£0",
+        "image": "https://static.thousandwonders.net/Winterbourne.Botanic.Garden.original.27561.jpg",
+        "description": "",
+        "website": "https://www.winterbourne.org.uk/",
+        "googleMapLink": "https://www.google.com/maps/dir/52.4843468,-1.918675/winterbourne+gardens/@52.4688966,-1.9350437,14z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x4870bc4a698febbf:0xd9ef798dd0e76823!2m2!1d-1.9235632!2d52.4526911?hl=en-GB"
+
+
+    }, {
+        "activityName": "Birmingham Hippodrome",
+        "filterCategory": ["culture", "family", "random"],
+        "ageRange": "Any",
+        "cost": "£0",
+        "image": "https://drlqq8xn694xu.cloudfront.net/wp-content/uploads/2015/07/20100132/Auditorium.jpg",
+        "description": "Birmingham Hippodrome is a cultural hub that gives everyone the chance to experience unforgettable theatrical performances, arts and culture.",
+        "website": "https://www.birminghamhippodrome.com/",
+        "googleMapLink": "https://www.google.com/maps/dir//hippodrome+theatre/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x4870bc89dd62bcbf:0x8ed2cc5270cc5db9?sa=X&ved=2ahUKEwjoyJ6Bzr_tAhUjQUEAHZYED-4Q9RcwInoECEIQBA"
+    }, {
+        "activityName": "Birmingham Museum & Art Gallery",
+        "filterCategory": ["culture", "family", "random"],
+        "ageRange": "Any",
+        "cost": "£0",
+        "image": "https://theculturetrip.com/wp-content/uploads/2015/11/birmingham-museum-art-gallery-flickr-luckes_photos.jpg",
+	    "description": "Birmingham Museum and Art Gallery (BMAG) first opened in 1885. It is housed in a Grade II* listed city centre landmark building. When the building is fully open, there are over 40 galleries to explore that display art, applied art, social history, archaeology and ethnography.",
+        "website": "https://www.birminghammuseums.org.uk/bmag", 
+	    "googleMapLink": "https://www.google.com/maps/dir//bham+museum/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x4870bc8c914c47a3:0x66e3b59f807e9444?sa=X&ved=2ahUKEwj7h9b90b_tAhUTV8AKHVGACNgQ9RcwHXoECDwQBQ"
+    }, {
+        "activityName": "Selly Manor",
+        "filterCategory": ["culture", "family" ],
+        "ageRange": "Any",
+        "cost": "£2",
+        "image": "https://i2-prod.birminghammail.co.uk/incoming/article9254325.ece/ALTERNATES/s1200c/Laurence-Cadbury-4.jpg",
+	    "description": "Selly Manor Museum, made up of two distinct and beautiful buildings, lies at the heart of Bournville garden village in Birmingham and has a surprising history. Selly Manor dates from medieval times and its intriguing past includes an Italian wine merchant, a burglar and a world famous chocolate maker!",
+        "website": "https://sellymanormuseum.org.uk/", 
+	    "googleMapLink": "https://www.google.com/maps/dir/52.4843468,-1.918675/selly+manor/@52.4575017,-1.9515707,13z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x8824c707a37faaab:0x577e3ba049e54a0b!2m2!1d-1.9342376!2d52.4307444"
     }
 ]
