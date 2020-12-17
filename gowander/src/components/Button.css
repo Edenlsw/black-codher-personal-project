@@ -2,7 +2,7 @@
     --primary: #fff;
     }
 
-. btn {
+.btn {
     padding: 8px 20px;
     border-radius: 2px;
     outline: none;
@@ -34,7 +34,7 @@
     font-size: 20px;
 }
 
-..btn-medium:hover, .btn--large:hover {
+.btn-medium:hover, .btn--large:hover {
     background: #fff;
     color: #224422;
     transition: all 0.s ease-out;
