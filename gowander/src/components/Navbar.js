@@ -13,7 +13,7 @@ function Navbar() {
 
     const closeMobileMenu = () => setClick(false);
 
-
+// button shows when page resizes - 
     const showButton = () => {
         if (window.innerWidth <= 960) {
             setButton(false)
@@ -21,7 +21,7 @@ function Navbar() {
             setButton(true);
         }
     };
-// button shows when page resizes
+
     window.addEventListener('resize', showButton)
 
 
@@ -31,7 +31,8 @@ function Navbar() {
             <nav className="navbar">
 
                 <div className="navbar-container">
-                    <Link to="/" className="navbar-logo">
+                    {/* logo click closes menu bar  */}
+                    <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
                         GoWander <i className="fab fa-typo3"></i>
                     </Link>
                     {/* toggle between bars navbar */}
@@ -57,11 +58,11 @@ function Navbar() {
                         </li>
                             <li className='nav-item'>
                             <Link to='/get-started' className='nav-links' onClick={closeMobileMenu}>
-                                Get Started
+                                GET STARTED
                             </Link>
                         </li>
                     </ul>
-                    {button && <Button buttonStyle='btn--outline'>GET STARTED</Button>}
+                    {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
                 </div>
             </nav>
             
