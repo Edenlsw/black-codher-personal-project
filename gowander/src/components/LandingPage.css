@@ -37,6 +37,11 @@
     margin: 10px;
 }
 
+
+
+
+/* responsive css */
+
 @media screen and (max-width: 960px) {
     .landing-container > h1 {
         font-size: 60px;
