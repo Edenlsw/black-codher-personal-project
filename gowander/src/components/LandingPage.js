@@ -8,10 +8,11 @@ function LandingPage() {
         <div className="landing-container">
             <h1>Let's Go</h1>
             <p>What are you waiting for?</p>
-            <div className="lanidng-btns">
+            <div className="landing-btns">
                 <Button className="btns" buttonStyle="btn--outline" buttonSize="btn--large">
-                    GET STARTED
+                    HOW IT WORKS
                 </Button>
+
                 <Button className="btns" buttonStyle="btn--primary" buttonSize="btn--large">
                     GET STARTED
                 </Button>
