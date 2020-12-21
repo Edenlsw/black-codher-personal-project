@@ -42,4 +42,21 @@ export const NewButton = ({ children, type, onClick, buttonStyle, buttonSize }) 
 };
 
 
+// button on how it works page linking to how it works
+export const LetsGoButton= ({ children, type, onClick, buttonStyle, buttonSize }) => { 
+    
+    const checkButtonStyle = STYLES.includes(buttonStyle) ? buttonStyle : STYLES[0]
+
+    const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : [0]
+
+    return (
+        <Link to='/get-started' className='btn-mobile'>
+            <button className={`btn ${checkButtonStyle} ${checkButtonSize}`} onClick={onClick} type={type}>
+                {children}
+            </button>
+        </Link>
+        
+    )
+};
+
 

@@ -3,7 +3,7 @@ import React from 'react'
 import '../LandingPage';
 import LandingPage from '../LandingPage';
 import About from '../Pages/About';
-
+import HowItWorks from './HowItWorks';
 
 
 
@@ -12,7 +12,7 @@ function Home() {
         <>
             <LandingPage />
             <About />
-            {/* <How-It-Works /> */}
+            <HowItWorks />
             
         </>
     )
