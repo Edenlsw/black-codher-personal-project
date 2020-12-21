@@ -1,8 +1,8 @@
 .landing-container {
-    /* background: url('../images/map2.jpg')  center center/cover no-repeat; */
+    background: url('../images/map2.jpg')  center center/cover no-repeat;
     /* background: url('../images/person-view.jpg')  center center/cover no-repeat; */
     /* background: url('../images/travel-needs.jpg')  center center/cover no-repeat; */
-    background: url('../images/travel-pic.jpg')  center center/cover no-repeat;
+    /* background: url('../images/travel-pic.jpg')  center center/cover no-repeat; */
     /* background: url('../images/boat.jpg')  center center/cover no-repeat; */
     height: 100vh;
     width: 100%;
