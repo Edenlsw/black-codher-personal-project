@@ -62,9 +62,26 @@
     
 }
 
-@media screen and (max-width: 600px) {
-    .landing-container > h1 {
+@media screen and (max-width: 480px) {
+    .about > h1 {
         font-size: 30px;
-        margin-bottom:-100px;
+        margin-top: 250px;
+        margin-left: 10px;
+        margin-right: 10px;
+        
     }
-  }
+
+    .about > p {
+        font-size: 20px;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-bottom: 5px;
+    }
+
+    .about-btns {
+        margin-bottom: 200px;
+    }
+
+    
+}
+
