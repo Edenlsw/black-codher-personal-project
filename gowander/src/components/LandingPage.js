@@ -1,6 +1,6 @@
 import React from 'react';
 import '../App.css';
-import { Button, NewButton } from './Button';
+import { Button, NewButton, LetsGoButton } from './Button';
 import './LandingPage.css';
 
 function LandingPage() {
@@ -9,13 +9,13 @@ function LandingPage() {
             <h1>Let's Go</h1>
             <p>What are you waiting for?</p>
             <div className="landing-btns">
-                <Button className="btns" buttonStyle="btn--outline" buttonSize="btn--large">
-                    GET STARTED
-                </Button>
+                <NewButton className="btns" buttonStyle="btn--outline" buttonSize="btn--large">
+                    HOW IT WORKS
+                </NewButton>
 
-                 <Button className="btns" buttonStyle="btn--outline" buttonSize="btn--large">
+                 <LetsGoButton className="btns" buttonStyle="btn--outline" buttonSize="btn--large">
                     GET STARTED
-                </Button>
+                </LetsGoButton>
             </div>
         </div>
     )

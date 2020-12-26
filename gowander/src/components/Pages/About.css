@@ -50,6 +50,7 @@
         font-size: 55px;
         margin-top:-100px;
         margin-left: 20px;
+        
     }
 
     .about > p {
@@ -60,3 +61,10 @@
 
     
 }
+
+@media screen and (max-width: 600px) {
+    .landing-container > h1 {
+        font-size: 30px;
+        margin-bottom:-100px;
+    }
+  }

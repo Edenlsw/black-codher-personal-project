@@ -69,3 +69,23 @@
         width: 100%;
     }
 }
+
+@media screen and (max-width: 600px) {
+    .landing-container > h1 {
+        font-size: 50px;
+        margin-top:-100px;
+    }
+
+    .landing-container > p {
+        font-size: 25px;
+    }
+
+    .btn-mobile {
+        display: block;
+        text-decoration: none;
+    }
+
+    .btn {
+        width: 100%;
+    }
+  }
