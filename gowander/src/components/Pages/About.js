@@ -5,7 +5,7 @@ import { Button, NewButton, LetsGoButton } from '../Button';
 
 function About() {
     return (
-        <div className="about">
+        <div className="about-container">
             <h1>What is GoWander? </h1>
             <p>
                 The idea of GoWonder, is a fun way to explore a city. Simply type in your location, add a filter here and there, press the button, and it will generate an activity for you to do based on your filters and preferences.
