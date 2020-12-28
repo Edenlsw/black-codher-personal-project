@@ -46,6 +46,8 @@
 
 
 /* responsive css */
+
+/* screen size laptop - pc */
 @media screen and (max-width: 960px) {
     .how-it-works-container  > h1 {
         font-size: 55px;
@@ -59,8 +61,9 @@
         margin-right: 30px;
         
     }
-}
 
+}
+/* tablet size */
 @media screen and (max-width: 768px) {
     .how-it-works-container > h1 {
         font-size: 50px;
@@ -75,13 +78,21 @@
         margin-right: 30px;
     }
 
+    .works-li {
+        margin-left: 80px;
+        margin-right: 30px;
+        margin-bottom: 5px;
+        margin-top: 10px;
+    }
+
     
 }
 
+/* phone size */
 @media screen and (max-width: 480px) {
     .how-it-works-container > h1 {
         font-size: 30px;
-        margin-top: 50px;
+        margin-top: 280px;
         margin-left: 10px;
         margin-right: 10px;
         margin-bottom: 60px;
@@ -95,8 +106,15 @@
         margin-bottom: 5px;
     }
 
+    .works-li {
+        margin-left: 60px;
+        margin-right: 30px;
+        margin-bottom: 5px;
+        margin-top: 10px;
+    }
+
     .how-it-works-btns {
-        margin-bottom: 100px;
+        margin-bottom: 30px;
     }
 
     

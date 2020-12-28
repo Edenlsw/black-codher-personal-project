@@ -72,7 +72,7 @@
 
 @media screen and (max-width: 480px) {
     .landing-container{
-        margin-bottom: 150px;
+        margin-bottom: 250px;
     }
     .landing-container > h1 {
         font-size: 50px;
