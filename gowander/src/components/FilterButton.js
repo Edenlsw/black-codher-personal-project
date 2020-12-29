@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+
 import '../components/FilterButton.css';
 
 function FilterButton() {
@@ -10,4 +11,4 @@ function FilterButton() {
     )
 }
 
-export default FilterButton
+export default FilterButton;
