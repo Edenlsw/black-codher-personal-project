@@ -5,7 +5,8 @@ import Home from './components/Pages/Home';
 
 import './App.css';
 import About from './components/Pages/About.js';
-import HowItWorks from './components/Pages/HowItWorks.js'
+import HowItWorks from './components/Pages/HowItWorks.js';
+import GetStarted from './components/Pages/GetStarted.js';
 
 function App() {
   return (
@@ -15,7 +16,9 @@ function App() {
         <Switch>
           <Route path='/' exact component={Home} />
           <Route path='/About' exact component={About} />
-          <Route path='/HowItWorks' exact component= {HowItWorks}/>
+          <Route path='/HowItWorks' exact component={HowItWorks} />
+          <Route path='/GetStarted' exact component={GetStarted} />
+          {/* <Route path='/Results' exact component= {Results}/> */}
         </Switch>
       </Router>
       

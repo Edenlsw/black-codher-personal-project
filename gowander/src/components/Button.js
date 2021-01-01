@@ -50,7 +50,7 @@ export const LetsGoButton= ({ children, type, onClick, buttonStyle, buttonSize }
     const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : [0]
 
     return (
-        <Link to='/Get-started' className='btn-mobile'>
+        <Link to='/GetStarted' className='btn-mobile'>
             <button className={`btn ${checkButtonStyle} ${checkButtonSize}`} onClick={onClick} type={type}>
                 {children}
             </button>

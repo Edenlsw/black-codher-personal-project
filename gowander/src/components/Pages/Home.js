@@ -4,6 +4,7 @@ import '../LandingPage';
 import LandingPage from '../LandingPage';
 import About from '../Pages/About';
 import HowItWorks from './HowItWorks';
+import GetStarted from './GetStarted';
 
 
 
@@ -13,6 +14,7 @@ function Home() {
             <LandingPage />
             <About />
             <HowItWorks />
+            <GetStarted />
             
         </>
     )
