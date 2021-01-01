@@ -6,11 +6,32 @@ import './GetStarted.css'
 
 function GetStarted() {
     return (
-        <div className="filter-buttons">
+        <div className="filter-container">
+            <div className="filter-buttons">
             <FilterButtonFamily className="btns" buttonStyle="btn--primary" buttonSize="btn--large">
-                Hello
+                Family
             </FilterButtonFamily>
+            <FilterButtonRandom className="btns" buttonStyle="btn--primary" buttonSize="btn--large">
+                Random
+            </FilterButtonRandom>
+            <FilterButtonRandom className="btns" buttonStyle="btn--primary" buttonSize="btn--large">
+                Nature 
+            </FilterButtonRandom>
+            <FilterButtonRandom className="btns" buttonStyle="btn--primary" buttonSize="btn--large">
+                Active 
+            </FilterButtonRandom>
+            <FilterButtonRandom className="btns" buttonStyle="btn--primary" buttonSize="btn--large">
+                Culture 
+            </FilterButtonRandom>
+            <FilterButtonRandom className="btns" buttonStyle="btn--primary" buttonSize="btn--large">
+                Fun
+            </FilterButtonRandom>
         </div>
+
+
+
+        </div>
+        
     )
 }
 

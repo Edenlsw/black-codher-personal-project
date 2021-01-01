@@ -6,8 +6,7 @@
     background-color: blue;
 } */
 
-
-body {
+.filter-container {
     margin: 0;
     padding: 0;
     font-family: fantasy;
@@ -15,7 +14,18 @@ body {
     /* background-image: radial-gradient(#c4dd77,#475c07,#ed8785,#6a136b,#0f14b8,#adafed); */
     background-size: 400%;
     animation: bganimation 15s infinite;
+    
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+
+
 }
+
 
 
 @keyframes bganimation {
@@ -29,3 +39,16 @@ body {
         background-position: 0% 50%;
     }
 }
+
+
+
+/* body {
+    margin: 0;
+    padding: 0;
+    font-family: fantasy;
+    background-image: linear-gradient(85deg,#c4dd77,#475c07,#ed8785,#6a136b,#0f14b8,#adafed);
+    background-size: 400%;
+    animation: bganimation 15s infinite;
+}
+ */
+
