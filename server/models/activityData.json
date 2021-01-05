@@ -29,7 +29,7 @@
     }, {
         "activityName": "Treasure Hunt",
         "filterCategory": ["fun", "active", "family","culture"],
-        "minimumAge": "Any",
+        "minimumAge": 0,
         "cost": 9.99,
         "image": "https://treasurehuntbirmingham.com/images/logo/treasure-hunt-birmingham-logo-black.svg",
         "description": "Following the directions and solving the clues along the way, Birmingham Treasure Hunts take you past many local attractions and places of interest, Birmingham Cathedral, Birmingham Museum and Art Gallery and The Bull Ring, but more importantly they get you looking around opening your eyes to so many other things you would ordinarily walk straight past!",
@@ -38,7 +38,7 @@
     }, {
         "activityName": "Ikon Gallery",
         "filterCategory": ["culture", "random", "family"],
-        "minimumAge": "Any",
+        "minimumAge": 0,
         "cost": 0.00,
         "image": "https://www.brindleyplace.com/wp-content/uploads/2019/04/ikon-1-1920x900.jpg",
         "description": "Ikon is an internationally acclaimed art gallery situated in central Birmingham. Housed in a magnificent neo-gothic school building, it is an educational charity and works to encourage public engagement with contemporary art through exhibiting new work in a context of debate and participation. It offers free entry to all. The gallery programme features artists from around the world. A variety of media is represented, including sound, film, mixed media, photography, painting, sculpture and installation.",
@@ -47,7 +47,7 @@
     }, {
         "activityName": "The Shakespeare Express",
         "filterCategory": ["family", "culture", "random"],
-        "minimumAge": "Any",
+        "minimumAge": 0,
         "cost": 35,
         "image": "http://vintagetrains.co.uk/uploads/images/SE-7-9-14-Andy-Garsed-1280x957-870x325.jpg",
         "description": "Enjoy a return trip to world famous Stratford upon Avon with hot breakfast rolls on the way there.  In Stratford you have around 4 hours to explore before we take you back to Birmingham Snow Hill.  Treat yourself to a packed lunch picnic box containing a selection of sandwiches, cake and scones with jam and cream to unpack in Stratford or eat on the journey back to Birmingham. ",
@@ -65,7 +65,7 @@
     }, {
         "activityName": "A Tolkien Tour of Birmingham",
         "filterCategory": ["culture", "random"],
-        "minimumAge": "Any",
+        "minimumAge": 0,
         "cost": 3,
         "image": "https://www.birminghamupdates.com/wp-content/uploads/2019/06/The-Hobbit-at-Sarehole-Mill.jpg",
         "description": "Take a tour around Birmingham to see the sights that inspired Tolkien when writing Lord of The Rings",
