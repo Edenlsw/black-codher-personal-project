@@ -33,7 +33,7 @@ function Navbar() {
                 <div className="navbar-container">
                     {/* logo click closes menu bar  */}
                     <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-                        GoWander <i className="fab fa-typo3"></i>
+                        GoWander 
                     </Link>
                     {/* toggle between bars navbar */}
                     <div className="menu-icon" onClick={handleClick}>
