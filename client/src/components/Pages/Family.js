@@ -22,8 +22,8 @@ function Family() {
         const getfilters = async () => {
           let res = await filterService.getAll();
           // setfilters(res);
-          // console.log(res)
-          const filtered = res.filter(e => console.log(e.filterCategory.includes("family")));
+          console.log(res)
+          const filtered = res.filter(e => (e.filterCategory.includes("family")));
           console.log(filtered)
           setfilters(filtered);
   };

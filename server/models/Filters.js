@@ -4,7 +4,7 @@ const { Schema } = mongoose;
 const filterSchema = new Schema({
   activityName: String,
   description: String,
-  filterCategory: [Array]
+  filterCategory: Array
   // image: Image,
 });
 
