@@ -12,6 +12,7 @@ import Family from './components/Pages/Family.js';
 import Random from './components/Pages/Random.js';
 import Fun from './components/Pages/Fun.js';
 import Nature from './components/Pages/Nature.js';
+import Culture from './components/Pages/Culture.js';
 import filterService from './services/filterService';
 
 
@@ -33,7 +34,8 @@ function App() {
           <Route path='/Random' exact component={Random} />
           {/* <Route path='/Fun' exact component={Fun} */}
           <Route path='/Random' exact component={Fun} />
-          <Route path='/Nature' exact component= {Nature}/>
+          <Route path='/Nature' exact component={Nature} />
+          <Route path='/Culture' exact component= {Culture}/>
         </Switch>
       </Router>
       
