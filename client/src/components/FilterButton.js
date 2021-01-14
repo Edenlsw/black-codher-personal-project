@@ -73,7 +73,7 @@ export const FilterButtonActive = ({ children, type, onClick, buttonStyle, butto
     const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : [0]
 
     return (
-        <Link to='/Nature' className='btn-mobile'>
+        <Link to='/Active' className='btn-mobile'>
         <button className={`btn ${checkButtonStyle} ${checkButtonSize}`} onClick={onClick} type={type}>
             {children}
         </button>
@@ -112,7 +112,7 @@ export const FilterButtonCulture = ({ children, type, onClick, buttonStyle, butt
     const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : [0]
 
     return (
-        <Link to='/Nature' className='btn-mobile'>
+        <Link to='/Culture' className='btn-mobile'>
         <button className={`btn ${checkButtonStyle} ${checkButtonSize}`} onClick={onClick} type={type}>
             {children}
         </button>
