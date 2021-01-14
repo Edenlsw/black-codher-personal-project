@@ -55,7 +55,21 @@ export const FilterButtonRandom = ({ children, type, onClick, buttonStyle, butto
 
 
 // filter button for fun / games
+export const FilterButtonFun = ({ children, type, onClick, buttonStyle, buttonSize }) => {
+    
+    const checkButtonStyle = STYLES.includes(buttonStyle) ? buttonStyle : STYLES[0]
 
+    const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : [0]
+
+    return (
+        <Link to='/Fun' className='btn-mobile'>
+        <button className={`btn ${checkButtonStyle} ${checkButtonSize}`} onClick={onClick} type={type}>
+            {children}
+        </button>
+    </Link>
+
+    )
+}
 
 
 // filter button for culture

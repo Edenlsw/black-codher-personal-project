@@ -1,50 +1,71 @@
-// code to connect to server
-
 import React, { useState, useEffect } from 'react';
+import filterService from '../../services/filterService';
+import PropTypes from 'prop-types';
 
-// SERVICES
-import userService from '../../services/userService';
+// Services
 
 
 
 function Random() {
-  const [users, setusers] = useState(null);
+  const [filters, setfilters] = useState(null);
+  const [activityFilters, setActivityFilters] = useState(null);
+    
+     
+    
+      
+  const getfilters = async () => {
+    let res = await filterService.getAll();
+    setfilters(res);
+    setActivityFilters(res.filter(e => e.type === "random"));
 
+  };
+  
+  // fetching data from database
   useEffect(() => {
-    if (!users) {
-      getusers();
+    if (!filters) {
+      getfilters();
     }
   });
-
-  const getusers = async () => {
-    let res = await userService.getAll();
-    setusers(res);
-  };
-
-  const renderUser = (user) => {
+    
+  // var random = filters.filter(e => e.type === "random")
+  
+  function showRandom() {
+    setActivityFilters()
+  }
+  
+  
+  // const renderFilter = (filter) 
+    
+        
+      
+    
     return (
-      <li key={user._id}>
-        <h3>
-          {`${user.first_name} 
-          ${user.last_name}`}
-        </h3>
-        {/* <p>{user.location}</p> */}
-      </li>
+      <div className="random">
+        <button onClick={() => showRandom()}>Random</button>
+          
+        {
+          activityFilters && activityFilters.map((filter) => (
+            <div key={filter._id}>
+               <h3>
+                      {filter.activityName}
+                    </h3>
+                    <p>{filter.description}</p>
+                    
+              <filterService filter={filter} />
+              <hr style={{ opacity: '.1' }} />
+            </div>
+          ))
+        }
+      </div>
     );
-  };
+          
+  }
 
-  return (
-    <div>
-      <ul>
-        {users && users.length > 0 ? (
-          users.map((user) => renderUser(user))
-        ) : (
-          <p>No users found</p>
-        )}
-      </ul>
-    </div>
-  );
-}
+
+  
+  
+  
+    export default Random;  
 
 
 
@@ -55,4 +76,64 @@ function Random() {
 
 
 
-export default Random;
+
+
+
+
+
+
+// function Random() {
+//   const [filters, setfilters] = useState(null);
+//   const [activityFilters, setActivityFilters] = useState(null);
+    
+     
+    
+      
+//   const getfilters = async () => {
+//     let res = await filterService.getAll();
+//     setfilters(res);
+//     setActivityFilters(res.filter(e => e.type === "active"));
+
+//   };
+  
+//   // fetching data from database
+//   useEffect(() => {
+//     if (!filters) {
+//       getfilters();
+//     }
+//   });
+    
+//   var active = filters.filter(e => e.type === "active")
+  
+//   function showActive() {
+//     setActivityFilters(active)
+//   }
+  
+  
+//   // const renderFilter = (filter) 
+    
+        
+      
+    
+//     return (
+//       <div className="active">
+//         <button onClick={() => showActive()}>active</button>
+          
+//         {
+//           activityFilters && activityFilters.map((filter) => (
+//             <div key={filter._id}>
+//               <filterService filter={filter} />
+//               <hr style={{ opacity: '.1' }} />
+//             </div>
+//           ))
+//         }
+//       </div>
+//     );
+          
+//   }
+
+
+  
+  
+  
+//     export default Random;  

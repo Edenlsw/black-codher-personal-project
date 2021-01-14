@@ -10,6 +10,7 @@ import HowItWorks from './components/Pages/HowItWorks.js';
 import GetStarted from './components/Pages/GetStarted.js';
 import Family from './components/Pages/Family.js';
 import Random from './components/Pages/Random.js';
+import Fun from './components/Pages/Fun.js';
 import filterService from './services/filterService';
 
 
@@ -28,7 +29,9 @@ function App() {
           <Route path='/HowItWorks' exact component={HowItWorks} />
           <Route path='/GetStarted' exact component={GetStarted} />
           <Route path='/Family' exact component={Family} />
-          <Route path='/Random' exact component= {Random}/>
+          <Route path='/Random' exact component={Random} />
+          {/* <Route path='/Fun' exact component={Fun} */}
+          <Route path='/Random' exact component= {Fun}/>
         </Switch>
       </Router>
       
