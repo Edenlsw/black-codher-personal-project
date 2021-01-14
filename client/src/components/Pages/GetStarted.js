@@ -1,5 +1,5 @@
 import React from 'react';
-import FilterButton, { FilterButtonFamily, FilterButtonRandom, FilterButtonFun, FilterButtonNature, FilterButtonCulture } from '../FilterButton';
+import FilterButton, { FilterButtonFamily, FilterButtonRandom, FilterButtonFun, FilterButtonNature, FilterButtonCulture, FilterButtonActive } from '../FilterButton';
 import './GetStarted.css'
 
 // import Navbar from '../Navbar';
@@ -17,9 +17,9 @@ function GetStarted() {
             <FilterButtonNature className="btns" buttonStyle="btn--primary" buttonSize="btn--large">
                 Nature 
             </FilterButtonNature>
-            <FilterButtonRandom className="btns" buttonStyle="btn--primary" buttonSize="btn--large">
+            <FilterButtonActive className="btns" buttonStyle="btn--primary" buttonSize="btn--large">
                 Active 
-            </FilterButtonRandom>
+            </FilterButtonActive>
             <FilterButtonCulture className="btns" buttonStyle="btn--primary" buttonSize="btn--large">
                 Culture 
             </FilterButtonCulture>

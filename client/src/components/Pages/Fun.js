@@ -1,75 +1,83 @@
 import React, { useState, useEffect } from 'react';
 import filterService from '../../services/filterService';
 import PropTypes from 'prop-types';
-// import Family from './Family';
 
-
-
-
+// Services
 
 
 
 function Fun() {
-  // const [filters, setfilters] = useState([]);
+    
   const [filters, setfilters] = useState(null);
+  // const [filteredActivity, setFilteredActivity] = useState(null)
   
-    useEffect(() => {
-      if (!filters) {
-        getfilters();
-      }
-    });
-  
-    const getfilters = async () => {
-      let res = await filterService.getAll();
-      setfilters(res);
-    };
-  
-  const renderFilter = (filter) => {
-  
+
+
+  useEffect(() => {
+          if (!filters) {
+            getfilters();
+          }
+        });
       
+        const getfilters = async () => {
+          let res = await filterService.getAll();
+          // setfilters(res);
+          console.log(res)
+          const filtered = res.filter(e => (e.filterCategory.includes("fun")));
+          console.log(filtered)
+          setfilters(filtered);
+  };
+  
+
+  
+  
+  
+   
+
+
+    // function showFamily() {
+    //   setFilteredActivity(Family)
+    // }
+
     
-    
-    
+    // const [filteredActivity, setFilteredActivity] = useState(null)
+  
+  
     return (
-      <div>
-        
-          < li key={filter._id}>
-        {/* {filter.filterCategory[family]} */}
-        <h3>
-          {filter.activityName}
+        <div className="filters">
+            {/* <button onClick={() => showFamily()}>Family</button> */}
             
-        </h3>
-          <p>{filter.description}</p>
-          {filter.image}
-        
-        {/* {renderFamily} */}
 
-        </li>
-      
-         
+            {
+                filters && filters.map((filter) => (
+                    <div key={filter._id}>
+                    <h3>
+                      {filter.activityName}
+                    </h3>
+                    <p>{filter.description}</p>
+                    
+                    </div>
+
+                ))
+            }
         </div>
-        
-      );
-    };
-  
-    return (
-      <div>
-        <ul>
-         
-          
 
-         
-
-          {filters && filters.length > 0 ? (filters.map((filter) => renderFilter(filter))
-          ) : (
-            <p>No Activities Available</p>
-          )}
-        </ul>
-      </div>
     );
-  }
+}
+
+
   
+  
+  
+    export default Fun;
 
 
 
-  export default Fun;
+
+
+
+
+
+
+
+

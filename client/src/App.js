@@ -32,7 +32,7 @@ function App() {
           <Route path='/GetStarted' exact component={GetStarted} />
           <Route path='/Family' exact component={Family} />
           <Route path='/Random' exact component={Random} />
-          {/* <Route path='/Fun' exact component={Fun} */}
+          <Route path='/Fun' exact component={Fun} />
           <Route path='/Random' exact component={Fun} />
           <Route path='/Nature' exact component={Nature} />
           <Route path='/Culture' exact component= {Culture}/>
