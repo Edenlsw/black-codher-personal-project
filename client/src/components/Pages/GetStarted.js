@@ -4,6 +4,15 @@ import './GetStarted.css'
 
 // import Navbar from '../Navbar';
 
+
+// function GetStarted() {
+    
+// }
+
+// export default GetStarted
+
+
+
 function GetStarted() {
     return (
         <div className="filter-container">

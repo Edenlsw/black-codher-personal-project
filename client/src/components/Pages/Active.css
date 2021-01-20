@@ -1,0 +1,51 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  margin: 20px 0;
+  padding: 0;
+  line-height: 1;
+  font-family: 'Roboto', sans-serif;
+  color: #202020;
+  background-color: #fbfbfb;
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+main {
+  display: flex;
+  
+  max-width: 1200px;
+  margin: auto;
+  justify-content: center;
+}
+
+.mr {
+  margin-right: 20px;
+}
+
+
+
+
+
+/* .grid-container {
+    display: grid;
+    grid-column-gap: 50px;
+    grid-template-columns: auto auto;
+    padding: 10px;
+  }
+  
+  .activityName, .activityDescription {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  } */
