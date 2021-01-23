@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import filterService from '../../services/filterService';
 import PropTypes from 'prop-types';
-
+import Carousel from 'react-elastic-carousel';
+import cardSlider from './cardSlider'
+import Slider from './Slider'
+import "./style.css";
 // Services
 
 
@@ -47,7 +50,7 @@ function Culture() {
         <div className="filters">
             {/* <button onClick={() => showFamily()}>Family</button> */}
             
-
+        
             {
                 filters && filters.map((filter) => (
                     <div key={filter._id}>
