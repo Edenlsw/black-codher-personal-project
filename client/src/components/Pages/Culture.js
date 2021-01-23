@@ -1,9 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import filterService from '../../services/filterService';
-import PropTypes from 'prop-types';
-import Carousel from 'react-elastic-carousel';
-import cardSlider from './cardSlider'
-import Slider from './Slider'
+
 import "./style.css";
 // Services
 
@@ -12,7 +9,6 @@ import "./style.css";
 function Culture() {
     
   const [filters, setfilters] = useState(null);
-  // const [filteredActivity, setFilteredActivity] = useState(null)
   
 
 
@@ -24,7 +20,6 @@ function Culture() {
       
         const getfilters = async () => {
           let res = await filterService.getAll();
-          // setfilters(res);
           console.log(res)
           const filtered = res.filter(e => (e.filterCategory.includes("culture")));
           console.log(filtered)
@@ -35,20 +30,10 @@ function Culture() {
   
   
   
-   
 
-
-    // function showFamily() {
-    //   setFilteredActivity(Family)
-    // }
-
-    
-    // const [filteredActivity, setFilteredActivity] = useState(null)
-  
   
     return (
         <div className="filters">
-            {/* <button onClick={() => showFamily()}>Family</button> */}
             
         
             {

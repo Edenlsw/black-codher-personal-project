@@ -21,12 +21,12 @@ function Active() {
   // const [index, setIndex] = useState(0);
   
  
-  const breakPoints = [
-    { width: 1, itemsToShow: 1 },
-    { width: 550, itemsToShow: 2, itemsToScroll: 2 },
-    { width: 768, itemsToShow: 3 },
-    { width: 1200, itemsToShow: 4 }
-  ];
+  // const breakPoints = [
+  //   { width: 1, itemsToShow: 1 },
+  //   { width: 550, itemsToShow: 2, itemsToScroll: 2 },
+  //   { width: 768, itemsToShow: 3 },
+  //   { width: 1200, itemsToShow: 4 }
+  // ];
   
 
   useEffect(() => {
@@ -64,7 +64,7 @@ function Active() {
       {
           filters && filters.map((filter) => (
             <div key={filter._id}>
-      <Carousel activeIndex={filters} onSelect={handleSelect}>
+      {/* <Carousel activeIndex={filters} onSelect={handleSelect}> */}
           
         
                 <div>
@@ -72,7 +72,7 @@ function Active() {
 
 
                 
-                <Slider breakPoints={breakPoints}>
+                {/* <Slider breakPoints={breakPoints}> */}
                     <div>
                       
                     <Card.Image src={filter.image} />
@@ -103,12 +103,12 @@ function Active() {
                   
                
               
-                </Slider>
+                {/* </Slider> */}
                 </div>
 
                 
                 
-      </Carousel>
+      {/* </Carousel> */}
    
   </div>
 

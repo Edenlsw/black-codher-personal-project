@@ -1,37 +1,82 @@
 import React from 'react';
-import { GoogleMap, withScriptjs, withGoogleMap} from "react-google-maps";
+// import { GoogleMap, withScriptjs, withGoogleMap, Marker } from "react-google-maps";
+import filterService from '../../services/filterService';
+import GoogleMap from '../GoogleMap';
 
-function Map() {
+
+
+
+
+
+function About() {
     return (
-        // how far map in zoomed and centered when page loads
-        <GoogleMap defaultZoom={10} defaultCenter={{ lat: 52.482899, lng: -1.893460 }}
-        />
-        
-    );
-}
-
-
-const WrappedMap = withScriptjs(withGoogleMap(Map));
-
-
-
-
-
-export default function About() {
-    return (
-        <div style={{ width: '100vw', height: '100vh' }}>
-            <WrappedMap googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places`}
-                loadingElement={<div style={{ height: "100%" }} />}
-                containerElement={<div style={{ height: "100%" }} />}
-                mapElement={<div style={{ height: "100%" }} />}
-            />
-        
+        <div className="map">
+            <h1>Google Map</h1>
+            <GoogleMap/>
         </div>
+    )
+}
+
+export default About
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// new tutorial 
+
+// function Map() {
+//     return (
+//         // how far map in zoomed and centered when page loads
+//         <GoogleMap defaultZoom={10} defaultCenter={{ lat: 52.482899, lng: -1.893460 }}
+//         />
         
 
-    );
+
+
+        
+//     );
+// }
+
+
+// const WrappedMap = withScriptjs(withGoogleMap(Map));
+
+
+
+
+
+// export default function About() {
+//     return (
+//         <div style={{ width: '100vw', height: '100vh' }}>
+//             <WrappedMap googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key= AIzaSyDrwa39T76pJiQ4RacPO21G8GzPkbGR3LY`}
+//                 loadingElement={<div style={{ height: "100%" }} />}
+//                 containerElement={<div style={{ height: "100%", width: "50%" }} />}
+//                 mapElement={<div style={{ height: "100%" }} />}
+//             />
+        
+//         </div>
+        
+
+//     );
     
-}
+// }
 
 
 
