@@ -2,11 +2,13 @@ import React, { useState, useEffect } from 'react';
 import filterService from '../../services/filterService';
 import './Active.css';
 // import 'bootstrap/dist/css/bootstrap.min.css';
-import Card  from '../Card';
+import Card from '../Card';
+import AliceCarousel from 'react-alice-carousel';
+import 'react-alice-carousel/lib/alice-carousel.css';
 import Carousel from 'react-elastic-carousel';
-import Slider from './Slider'
+// import Slider from './Slider'
 
-import { Col, Container, Row } from 'react-bootstrap';
+// import { Col, Container, Row } from 'react-bootstrap';
 
 
 // Services
@@ -18,17 +20,7 @@ function Active() {
     
   const [filters, setfilters] = useState(null);
   
-  // const [index, setIndex] = useState(0);
   
- 
-  // const breakPoints = [
-  //   { width: 1, itemsToShow: 1 },
-  //   { width: 550, itemsToShow: 2, itemsToScroll: 2 },
-  //   { width: 768, itemsToShow: 3 },
-  //   { width: 1200, itemsToShow: 4 }
-  // ];
-  
-
   useEffect(() => {
           if (!filters) {
             getfilters();
@@ -59,12 +51,11 @@ function Active() {
       
         <div className="active-filters">
      
-     
-      <main>
+     <Carousel >
+      {/* <main> */}
       {
           filters && filters.map((filter) => (
             <div key={filter._id}>
-      {/* <Carousel activeIndex={filters} onSelect={handleSelect}> */}
           
         
                 <div>
@@ -72,50 +63,61 @@ function Active() {
 
 
                 
-                {/* <Slider breakPoints={breakPoints}> */}
                     <div>
                       
                     <Card.Image src={filter.image} />
-                
-                      <Card.Title>
+                  {/* <Card.Title> */}
                         
                   
                         {filter.activityName}
                         
-                      </Card.Title>
+                      {/* </Card.Title> */}
+                
+                      {/* <Card.Title>
+                        
+                  
+                        {filter.activityName}
+                        
+                      </Card.Title> */}
                       
 
-                      <Card.Text>
+                      {/* <Card.Text> */}
                         
                         {filter.description}
                         
-                
+{/*                 
                       </Card.Text>
                       
 
-                      <Card.Button>
+                      <Card.Button> */}
                         
                         {filter.website}
                         
-                      </Card.Button>
-                      
+                      {/* </Card.Button>  */}
+                  
+
+
+
+                  
+              
                  </div>
                   
                
               
-                {/* </Slider> */}
                 </div>
 
                 
                 
-      {/* </Carousel> */}
    
   </div>
 
                 ))
             }
-          </main>
-          
+          {/* </main> */}
+      
+          </Carousel>
+    
+   
         </div>
 
     );

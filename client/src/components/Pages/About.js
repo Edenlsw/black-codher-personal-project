@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 // import { GoogleMap, withScriptjs, withGoogleMap, Marker } from "react-google-maps";
 import filterService from '../../services/filterService';
 import GoogleMap from '../GoogleMap';
@@ -8,16 +8,16 @@ import GoogleMap from '../GoogleMap';
 
 
 
-function About() {
-    return (
-        <div className="map">
-            <h1>Google Map</h1>
-            <GoogleMap/>
-        </div>
-    )
-}
+// function About() {
+//     return (
+//         <div className="map">
+//             <h1>Google Map</h1>
+//             <GoogleMap/>
+//         </div>
+//     )
+// }
 
-export default About
+// export default About
 
 
 
@@ -91,52 +91,52 @@ export default About
 
 
 
-// import React from 'react'
-// import { Link } from 'react-router-dom';
-// import './About.css';
-// import { Button, NewButton, LetsGoButton } from '../Button';
+import React from 'react'
+import { Link } from 'react-router-dom';
+import './About.css';
+import { Button, NewButton, LetsGoButton } from '../Button';
 
 
 
-// function About() {
-//     return (
-//         <div className="about-container">
-//             <h1>What is GoWander? </h1>
-//             <p>
-//                 Have you ever visited a new city and had nothing to do, so you spend hours online searching for recommended things to do? 
+function About() {
+    return (
+        <div className="about-container">
+            <h1>What is GoWander? </h1>
+            <p>
+                Have you ever visited a new city and had nothing to do, so you spend hours online searching for recommended things to do? 
             
-//             </p>
-//             <p>
-//                 Are you bored and looking for new and different things to do in your current home city?  
-//             </p>
-
-            
-            
-//             <p>
-//                 Then GoWander is the answer to all your problems. Whether you are after something do with the family, in nature or just something completely random then look further.
-//             </p>
-
-//             <p>
-//                 Simply pick a filter and GoWander will generate a variety of activities for you to do based on your preferences.
-//             </p>
-            
-//             <p>
-//                 For now, we are all operating within Birmingham UK, but so are looking to expand further across the UK.
-//             </p>
+            </p>
+            <p>
+                Are you bored and looking for new and different things to do in your current home city?  
+            </p>
 
             
             
+            <p>
+                Then GoWander is the answer to all your problems. Whether you are after something do with the family, in nature or just something completely random then look further.
+            </p>
+
+            <p>
+                Simply pick a filter and GoWander will generate a variety of activities for you to do based on your preferences.
+            </p>
+            
+            <p>
+                For now, we are all operating within Birmingham UK, but so are looking to expand further across the UK.
+            </p>
+
+            
+            
 
 
 
-//             <div className="about-btns">
-//                 <NewButton className="btns" buttonStyle="btn--primary" buttonSize="btn--large">
-//                     HOW IT WORKS
-//                 </NewButton>
-//             </div>
+            <div className="about-btns">
+                <NewButton className="btns" buttonStyle="btn--primary" buttonSize="btn--large">
+                    HOW IT WORKS
+                </NewButton>
+            </div>
 
-//         </div>
-//     )
-// }
+        </div>
+    )
+}
 
-// export default About
+export default About

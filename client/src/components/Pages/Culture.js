@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import filterService from '../../services/filterService';
+import GoogleMap from '../GoogleMap';
+
 
 import "./style.css";
 // Services
@@ -47,8 +49,11 @@ function Culture() {
                     </div>
 
                 ))
-            }
-        </div>
+        }
+        
+        <GoogleMap/>
+      </div>
+      
 
     );
 }
