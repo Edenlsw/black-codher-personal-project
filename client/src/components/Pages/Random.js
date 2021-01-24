@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import filterService from '../../services/filterService';
 import PropTypes from 'prop-types';
+import GoogleMap from '../GoogleMap';
+import Carousel from 'react-elastic-carousel';
+
 
 // Services
 
@@ -35,20 +38,14 @@ function Random() {
    
 
 
-    // function showFamily() {
-    //   setFilteredActivity(Family)
-    // }
-
-    
-    // const [filteredActivity, setFilteredActivity] = useState(null)
   
   
     return (
-        <div className="filters">
-            {/* <button onClick={() => showFamily()}>Family</button> */}
-            
+      <div className="filters">
+        
+        <Carousel>
 
-            {
+        {
                 filters && filters.map((filter) => (
                     <div key={filter._id}>
                     <h3>
@@ -60,6 +57,11 @@ function Random() {
 
                 ))
             }
+
+        </Carousel>
+        <GoogleMap/>
+
+           
         </div>
 
     );

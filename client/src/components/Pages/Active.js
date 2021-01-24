@@ -1,140 +1,44 @@
-import React, { useState, useEffect } from 'react';
-import filterService from '../../services/filterService';
-import './Active.css';
-// import 'bootstrap/dist/css/bootstrap.min.css';
-import Card from '../Card';
-import AliceCarousel from 'react-alice-carousel';
-import 'react-alice-carousel/lib/alice-carousel.css';
-import Carousel from 'react-elastic-carousel';
-// import Slider from './Slider'
 
-// import { Col, Container, Row } from 'react-bootstrap';
+import React from 'react';
 
 
-// Services
+import { GoogleMap, withScriptjs, withGoogleMap, Marker } from "react-google-maps";
 
-
-
-
-function Active() {
-    
-  const [filters, setfilters] = useState(null);
-  
-  
-  useEffect(() => {
-          if (!filters) {
-            getfilters();
-          }
-        });
-      
-        const getfilters = async () => {
-          let res = await filterService.getAll();
+function Map() {
+    return (
+        // how far map in zoomed and centered when page loads
+        <GoogleMap defaultZoom={10} defaultCenter={{ lat: 52.482899, lng: -1.893460 }}
+        />
         
-          console.log(res)
-          const filtered = res.filter(e => (e.filterCategory.includes("active")));
-          console.log(filtered)
-          setfilters(filtered);
-  };
-  
-
-  
-  
-  const handleSelect = (selectedFilters, e) => {
-    setfilters(selectedFilters);
-  };
-  
-   
 
 
-  
-  return (
-      
-        <div className="active-filters">
-     
-     <Carousel >
-      {/* <main> */}
-      {
-          filters && filters.map((filter) => (
-            <div key={filter._id}>
-          
+
         
-                <div>
-
-
-
-                
-                    <div>
-                      
-                    <Card.Image src={filter.image} />
-                  {/* <Card.Title> */}
-                        
-                  
-                        {filter.activityName}
-                        
-                      {/* </Card.Title> */}
-                
-                      {/* <Card.Title>
-                        
-                  
-                        {filter.activityName}
-                        
-                      </Card.Title> */}
-                      
-
-                      {/* <Card.Text> */}
-                        
-                        {filter.description}
-                        
-{/*                 
-                      </Card.Text>
-                      
-
-                      <Card.Button> */}
-                        
-                        {filter.website}
-                        
-                      {/* </Card.Button>  */}
-                  
-
-
-
-                  
-              
-                 </div>
-                  
-               
-              
-                </div>
-
-                
-                
-   
-  </div>
-
-                ))
-            }
-          {/* </main> */}
-      
-          </Carousel>
-    
-   
-        </div>
-
     );
 }
 
 
-  
-
-    export default Active;
+const WrappedMap = withScriptjs(withGoogleMap(Map));
 
 
 
 
 
+export default function About() {
+    return (
+        <div style={{ width: '100vw', height: '100vh' }}>
+            <WrappedMap googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key= AIzaSyDrwa39T76pJiQ4RacPO21G8GzPkbGR3LY`}
+                loadingElement={<div style={{ height: "100%" }} />}
+                containerElement={<div style={{ height: "50%", width: "100%" }} />}
+                mapElement={<div style={{ height: "50%" }} />}
+            />
+        
+        </div>
+        
 
-
-
+    );
+    
+}
 
 
 
@@ -143,24 +47,26 @@ function Active() {
 // import React, { useState, useEffect } from 'react';
 // import filterService from '../../services/filterService';
 // import './Active.css';
+// import Card from '../Card';
+// import Carousel from 'react-elastic-carousel';
+// import GoogleMap from '../GoogleMap';
+// import Slider from './Slider';
 
-// import Card  from '../Card';
+
+// // import Slider from './Slider'
 
 
-// import { Col, Container, Row } from 'react-bootstrap';
-// import PropTypes from 'prop-types';
 
 // // Services
+
 
 
 
 // function Active() {
     
 //   const [filters, setfilters] = useState(null);
-
   
-
-
+  
 //   useEffect(() => {
 //           if (!filters) {
 //             getfilters();
@@ -179,8 +85,16 @@ function Active() {
 
   
   
+//   const handleSelect = (selectedFilters, e) => {
+//     setfilters(selectedFilters);
+//   };
   
-   
+//   const breakPoints = [
+//     { width: 1, itemsToShow: 1 },
+//     { width: 550, itemsToShow: 2, itemsToScroll: 2 },
+//     { width: 768, itemsToShow: 3 },
+//     { width: 1200, itemsToShow: 4 }
+//   ];
 
 
   
@@ -188,42 +102,68 @@ function Active() {
       
 //         <div className="active-filters">
      
-            
-//       <main>
+//      <Carousel breakPoints={breakPoints}>
+//       {/* <main> */}
 //       {
-//         filters && filters.map((filter) => (
-//                   <Card className="mr">
-//                     <div key={filter._id}>
-                            
-//               <div class="grid-container">
+//           filters && filters.map((filter) => (
+//             <div key={filter._id}>
+          
+        
+//                 <div>
+
+
+
                 
-
-
-//                 <Card.Image src={filter.image} />
+//                     <div>
+//                       <Slider>
+//                     <Card.Image src={filter.image} />
+              
                 
-//                 <Card.Title>
-//                 {filter.activityName}
-//                 </Card.Title>
-
-//                 <Card.Text>
-//                   {filter.description}
+//                       <Card.Title>
+                        
                   
-//                 </Card.Text>
+//                         {filter.activityName}
+                        
+//                       </Card.Title> 
+                      
 
-//                 <Card.Button>{filter.website}</Card.Button>
-                
-                
-                            
-//                         </div>
-                            
-//                     </div>
-//                   </Card>
+//                       <Card.Text>
+                        
+//                         {filter.description}
+                        
+         
+//                       </Card.Text>
+                      
+
+//                       <Card.Button> 
+                        
+//                         {filter.website}
+                        
+//                       </Card.Button> 
                   
+// </Slider>
+
+
+                  
+              
+//                  </div>
+                  
+               
+              
+//                 </div>
+
+                
+                
+   
+//   </div>
 
 //                 ))
 //             }
-//           </main>
-            
+//           {/* </main> */}
+      
+//           </Carousel>
+//     <GoogleMap/>
+   
 //         </div>
 
 //     );
@@ -231,9 +171,115 @@ function Active() {
 
 
   
-  
-  
+
 //     export default Active;
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // import React, { useState, useEffect } from 'react';
+// // import filterService from '../../services/filterService';
+// // import './Active.css';
+
+// // import Card  from '../Card';
+
+
+// // import { Col, Container, Row } from 'react-bootstrap';
+// // import PropTypes from 'prop-types';
+
+// // // Services
+
+
+
+// // function Active() {
+    
+// //   const [filters, setfilters] = useState(null);
+
+  
+
+
+// //   useEffect(() => {
+// //           if (!filters) {
+// //             getfilters();
+// //           }
+// //         });
+      
+// //         const getfilters = async () => {
+// //           let res = await filterService.getAll();
+        
+// //           console.log(res)
+// //           const filtered = res.filter(e => (e.filterCategory.includes("active")));
+// //           console.log(filtered)
+// //           setfilters(filtered);
+// //   };
+  
+
+  
+  
+  
+   
+
+
+  
+// //   return (
+      
+// //         <div className="active-filters">
+     
+            
+// //       <main>
+// //       {
+// //         filters && filters.map((filter) => (
+// //                   <Card className="mr">
+// //                     <div key={filter._id}>
+                            
+// //               <div class="grid-container">
+                
+
+
+// //                 <Card.Image src={filter.image} />
+                
+// //                 <Card.Title>
+// //                 {filter.activityName}
+// //                 </Card.Title>
+
+// //                 <Card.Text>
+// //                   {filter.description}
+                  
+// //                 </Card.Text>
+
+// //                 <Card.Button>{filter.website}</Card.Button>
+                
+                
+                            
+// //                         </div>
+                            
+// //                     </div>
+// //                   </Card>
+                  
+
+// //                 ))
+// //             }
+// //           </main>
+            
+// //         </div>
+
+// //     );
+// // }
+
+
+  
+  
+  
+// //     export default Active;
 
 
 

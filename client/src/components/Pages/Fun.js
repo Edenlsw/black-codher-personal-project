@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import filterService from '../../services/filterService';
-import PropTypes from 'prop-types';
+import Carousel from 'react-elastic-carousel';
+import GoogleMap from '../GoogleMap';
+
 
 // Services
 
@@ -9,7 +11,6 @@ import PropTypes from 'prop-types';
 function Fun() {
     
   const [filters, setfilters] = useState(null);
-  // const [filteredActivity, setFilteredActivity] = useState(null)
   
 
 
@@ -21,7 +22,6 @@ function Fun() {
       
         const getfilters = async () => {
           let res = await filterService.getAll();
-          // setfilters(res);
           console.log(res)
           const filtered = res.filter(e => (e.filterCategory.includes("fun")));
           console.log(filtered)
@@ -35,20 +35,15 @@ function Fun() {
    
 
 
-    // function showFamily() {
-    //   setFilteredActivity(Family)
-    // }
 
-    
-    // const [filteredActivity, setFilteredActivity] = useState(null)
   
   
     return (
         <div className="filters">
-            {/* <button onClick={() => showFamily()}>Family</button> */}
             
 
-            {
+        <Carousel>
+        {
                 filters && filters.map((filter) => (
                     <div key={filter._id}>
                     <h3>
@@ -59,9 +54,13 @@ function Fun() {
                     </div>
 
                 ))
-            }
-        </div>
-
+        }
+        </Carousel>
+         
+        <GoogleMap />
+        
+      </div>
+     
     );
 }
 

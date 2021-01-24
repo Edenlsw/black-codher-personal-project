@@ -1,11 +1,15 @@
 import { Component } from 'react';
-import { Map, Marker, GoogleApiWrapper } from 'google-maps-react';
+import { Map, Marker, GoogleApiWrapper} from 'google-maps-react';
 import PlacesAutocomplete, {
     geocodeByAddress,
     getLatLng,
   } from 'react-places-autocomplete';
 
-
+//   style to change size of map 
+  const style = {
+    width: '100%',
+    height: '40%'
+  }
 
 export class MapContainer extends Component {
 
@@ -49,26 +53,31 @@ export class MapContainer extends Component {
       };
      
    
-    // onMarkerClick = (props, marker, e) =>
-    //   this.setState({
-    //     selectedPlace: props,
-    //     activeMarker: marker,
-    //     showingInfoWindow: true
-    //   });
+    onMarkerClick = (props, marker, e) =>
+      this.setState({
+        selectedPlace: props,
+        activeMarker: marker,
+        showingInfoWindow: true
+      });
    
-    // onMapClicked = (props) => {
-    //   if (this.state.showingInfoWindow) {
-    //     this.setState({
-    //       showingInfoWindow: false,
-    //       activeMarker: null
-    //     })
-    //   }
-    // };
+    onMapClicked = (props) => {
+      if (this.state.showingInfoWindow) {
+        this.setState({
+          showingInfoWindow: false,
+          activeMarker: null
+        })
+      }
+    };
+
+    
 
    
     render() {
+       
         return (
             <div id="googleMap">
+                
+
                 
             <PlacesAutocomplete
                 value={this.state.address}
@@ -76,7 +85,9 @@ export class MapContainer extends Component {
                 onSelect={this.handleSelect}
             >
                 {({ getInputProps, suggestions, getSuggestionItemProps, loading }) => (
-                <div>
+                        <div>
+                            
+                            {/* search bar  */}
                     <input
                     {...getInputProps({
                         placeholder: 'Search Places ...',
@@ -113,6 +124,7 @@ export class MapContainer extends Component {
                 <Map
                     google={this.props.google}
                     //   centers map to brum
+                    style={style}
                     initialCenter= {{
                         lat: this.state.mapCenter.lat,
                         lng: this.state.mapCenter.lng
@@ -129,15 +141,31 @@ export class MapContainer extends Component {
                             lat: this.state.mapCenter.lat,
                             lng: this.state.mapCenter.lng
               
-                        }}/>
-        
+                        }} />
+                    
+                    <Marker
+                        title={'The marker`s title will appear as a tooltip.'}
+                        
+                        name={'SOMA'}
+                        
+                        position={{ lat: 52.47945834465894, lng: -1.9108482125901436}} />
+                    
+      
                 
-        </Map>
-           </div>
+                </Map>
+                
+            </div>
+            
+            
               
           
       )
+    
     }
+
+
+
+
 }
   
 
@@ -145,4 +173,7 @@ export class MapContainer extends Component {
 
 export default GoogleApiWrapper({
     apiKey: ('AIzaSyDrwa39T76pJiQ4RacPO21G8GzPkbGR3LY')
-  })(MapContainer)
+    
+}) (MapContainer)
+  
+

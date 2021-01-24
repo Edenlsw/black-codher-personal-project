@@ -1,87 +1,6 @@
 /* 
-.Active {
-  font-family: sans-serif;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-}
-
-.rec-carousel-item:focus {
-  outline: none;
-  box-shadow: inset 0 0 1px 0px violet;
-} */
 
 
-
-/* 
-html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-*, *:before, *:after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
-}
-
-
-
-
-.active-filters {
-  margin: 100px 0;
-}
-
-
-body {
-  margin: 30px 0;
-  padding: 0;
-  line-height: 1;
-  font-family: 'Roboto', sans-serif;
-  color: #202020;
-  background-color: #fbfbfb;
-  font-smooth: always;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-main {
-
-height: 7000px;
-width: 700px;
-overflow: scroll;
-display: inline-block;
-text-align: center;
-padding-bottom: 10px;
-display: flex;
-align-items: center;
-}
-
-
-.mr {
-  margin-right: 5px;
-  margin-left: 5px;
-}
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
  html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -90,14 +9,6 @@ align-items: center;
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
 }
-
-
-
-
-.active-filters {
-  margin: 100px 0;
-}
-
 
 body {
   margin: 30px 0;
@@ -133,38 +44,20 @@ main {
   margin-right: 5px;
   margin-left: 5px;
 }
-
-
- 
  */
 
-
-
-
-
-
-
-
-
-.card {
-  width: 100%;
-  height: 200px;
-  margin: 0 20px;
+/* 
+.Active {
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
- 
+
+.rec-carousel-item:focus {
+  outline: none;
+  box-shadow: inset 0 0 1px 0px violet;
+} */
 
 
- .grid-container {
-    display: grid;
-    grid-column-gap: 50px;
-    grid-template-columns: auto auto;
-    padding: 10px;
-  }
-  
-  .activityName, .activityDescription {
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
-  } 

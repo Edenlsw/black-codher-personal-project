@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import filterService from '../../services/filterService';
 import GoogleMap from '../GoogleMap';
+import Carousel from 'react-elastic-carousel';
+
+
 
 
 import "./style.css";
@@ -37,7 +40,7 @@ function Culture() {
     return (
         <div className="filters">
             
-        
+            <Carousel>
             {
                 filters && filters.map((filter) => (
                     <div key={filter._id}>
@@ -50,6 +53,7 @@ function Culture() {
 
                 ))
         }
+        </Carousel>
         
         <GoogleMap/>
       </div>

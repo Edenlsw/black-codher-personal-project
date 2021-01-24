@@ -4,8 +4,8 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   min-width: 0;
-  max-width: 450px;
-  max-height: 60px;
+  max-width: 200px;
+  max-height: 100px;
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
@@ -35,7 +35,7 @@ export const Text = styled.p`
 `;
 
 export const Image = styled.img`
-  width: 100%;
+  width: 40%;
 `;
 
 export const Button = styled.button`
