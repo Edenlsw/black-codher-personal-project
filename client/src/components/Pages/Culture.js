@@ -3,9 +3,6 @@ import filterService from '../../services/filterService';
 import GoogleMap from '../GoogleMap';
 import Carousel from 'react-elastic-carousel';
 
-
-
-
 import "./style.css";
 // Services
 

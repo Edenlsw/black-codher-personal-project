@@ -1,3 +1,18 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    padding: 10px;
+  }
+  .funbtns {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    margin-top: 250px;
+    margin-left: 180px;
+    font-size: 30px;
+    text-align: center;
+  }
 .filter-container {
     background-image: linear-gradient(85deg,#c4dd77,#475c07,#ed8785,#6a136b,#0f14b8,#adafed);
 }
@@ -5,22 +20,18 @@
     margin: 0;
     padding: 0;
     font-family: fantasy;
-   
-    /* background-image: radial-gradient(#c4dd77,#475c07,#ed8785,#6a136b,#0f14b8,#adafed); */
     background-size: 400%;
-    animation: bganimation 15s infinite;
+    animation: bganimation 10s infinite;
     
     height: 100vh;
     width: 100%;
-    /* display: flex; */
-    /* flex-direction: column; */
     justify-content: center;
     /* align-items: center; */
     /* object-fit: contain; */
-    display: grid;
-    grid-template-columns: 150px 150px ;
+    /* display: grid; */
+    /* grid-template-columns: 150px 150px ; */
     grid-template-rows: 150px  150px 150px 150px;
-    grid-gap: 1rem;
+    grid-row-gap: 50px;
 
 }
 
@@ -58,7 +69,7 @@
     text-transform: uppercase;
 }
 
-/* 
+
 @keyframes bganimation {
     0%{
         background-position: 0% 50%;
@@ -72,4 +83,4 @@
 }
 
 
- */
+

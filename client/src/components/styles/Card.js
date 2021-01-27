@@ -4,7 +4,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   min-width: 0;
-  max-width: 200px;
+  // max-width: 300px;
   max-height: 100px;
   word-wrap: break-word;
   background-color: #fff;
@@ -13,6 +13,7 @@ export const Container = styled.div`
   border-radius: 0.25rem;
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
   overflow: hidden;
+  padding: 2px;
 `;
 
 export const Body = styled.div`
@@ -21,22 +22,33 @@ export const Body = styled.div`
   flex: 1 1 auto;
   min-height: 1px;
   padding: 1.25rem;
+  
+  
 `;
 
 export const Title = styled.h1`
   font-size: 1.25rem;
   font-weight: bold;
+  // margin-left: 15px;
+  text-align: center;
   margin: 0;
 `;
 
 export const Text = styled.p`
-  line-height: 25px;
+  line-height: 20px;
+  margin-left: 15px;
+  margin-right: 15px;
   color: #6c757d;
+  text-align: center;
+  width: 90%;
+
 `;
 
 export const Image = styled.img`
-  width: 40%;
-`;
+  width: 100%;
+  display: block;
+
+  `;
 
 export const Button = styled.button`
   cursor: pointer;

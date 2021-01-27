@@ -52,23 +52,25 @@ function Family() {
             <Carousel breakPoints={breakPoints}>
       {/* <main> */}
       {
-          filters && filters.map((filter) => (
-            <div key={filter._id}>
-          
+            filters && filters.map((filter) => (
+              <card classes="mr">
+             <div  key={filter._id}> 
+          {/* <Card className="mr" key={filter._id} > */}
                 <div>
 
 
                 
                 <div>
                 
-                      <Slider>
-                    <Card.Image src={filter.image} />
-              
-                
-                      <Card.Title>
+                  <Slider>
+                    
+                        <Card.Image src={filter.image} />
                         
-                  
-                        {filter.activityName}
+                        {/* <Card.Body> */}
+
+                      <Card.Title>
+  
+                        {filter.activityName} 
                         
                       </Card.Title> 
                       
@@ -86,11 +88,12 @@ function Family() {
                         {filter.website}
                         
                       </Card.Button> 
+                      {/* </Card.Body> */}
+              
                   
-</Slider>
-
-
-                  
+                      </Slider>
+                      
+             
               
                  </div>
                   
@@ -99,17 +102,20 @@ function Family() {
                 </div>
 
                 
-                
    
-  </div>
+                </div>
+                
+              </card>
+   
 
                 ))
             }
           {/* </main> */}
-      
+         
           </Carousel>
          
           <GoogleMap/>
+              
         </div>
 
     );

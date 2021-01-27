@@ -2,6 +2,9 @@ import React, { useState, useEffect } from 'react';
 import filterService from '../../services/filterService';
 import GoogleMap from '../GoogleMap';
 import Carousel from 'react-elastic-carousel';
+import FilterButton, { FilterButtonFun } from '../FilterButton';
+import './Nature.css';
+
 
 
 // Services
@@ -49,7 +52,7 @@ function Nature() {
                     <h3>
                       {filter.activityName}
                     </h3>
-                    <p>{filter.description}</p>
+                    {/* <p>{filter.description}</p> */}
                     
                     </div>
 
@@ -59,8 +62,18 @@ function Nature() {
 
         </Carousel>
             
-        <GoogleMap/>
+        {/* <GoogleMap/> */}
 
+        <div className="conatiner">
+
+        <button className="funbtns">
+            
+          Fun
+        </button>
+        </div>
+        
+        
+        
         </div>
       
 
