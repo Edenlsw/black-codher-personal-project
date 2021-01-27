@@ -2,8 +2,10 @@ import React, { useState, useEffect } from 'react';
 import filterService from '../../services/filterService';
 import GoogleMap from '../GoogleMap';
 import Carousel from 'react-elastic-carousel';
-import FilterButton, { FilterButtonFun } from '../FilterButton';
-import './Nature.css';
+// import './Nature.css';
+import './Neonbtns.css';
+import Card from '../Card';
+import Slider from './Slider';
 
 
 
@@ -40,46 +42,92 @@ function Nature() {
    
 
 
-    
+  const breakPoints = [
+    { width: 1, itemsToShow: 1 },
+    { width: 550, itemsToShow: 2, itemsToScroll: 2 },
+    { width: 768, itemsToShow: 3 },
+    { width: 1200, itemsToShow: 4 }
+  ];
+
+  
+  
+  
     return (
         <div className="filters">
             
+            
+            <Carousel breakPoints={breakPoints}>
+      {/* <main> */}
+      {
+            filters && filters.map((filter) => (
+              <card classes="mr">
+             <div  key={filter._id}> 
+          {/* <Card className="mr" key={filter._id} > */}
+                <div>
 
-        <Carousel>
-        {
-                filters && filters.map((filter) => (
-                    <div key={filter._id}>
-                    <h3>
-                      {filter.activityName}
-                    </h3>
-                    {/* <p>{filter.description}</p> */}
+
+                
+                <div>
+                
+                  <Slider>
                     
-                    </div>
+                        <Card.Image src={filter.image} />
+                        
+                        {/* <Card.Body> */}
+
+                      <Card.Title>
+  
+                        {filter.activityName} 
+                        
+                      </Card.Title> 
+                      
+
+                      <Card.Text>
+                        
+                        {filter.description}
+                        
+         
+                      </Card.Text>
+                      
+
+                      <Card.Button> 
+                        
+                        {filter.website}
+                        
+                      </Card.Button> 
+                      {/* </Card.Body> */}
+              
+                  
+                      </Slider>
+                      
+             
+              
+                 </div>
+                  
+               
+              
+                </div>
+
+                
+   
+                </div>
+                
+              </card>
+   
 
                 ))
-        }
-        
-
-        </Carousel>
-            
-        {/* <GoogleMap/> */}
-
-        <div className="conatiner">
-
-        <button className="funbtns">
-            
-          Fun
-        </button>
+            }
+          {/* </main> */}
+         
+          </Carousel>
+         
+          <GoogleMap/>
+              
         </div>
-        
-        
-        
-        </div>
-      
 
-        
     );
 }
+
 
 
   

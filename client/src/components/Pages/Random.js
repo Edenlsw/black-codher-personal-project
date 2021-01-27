@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import filterService from '../../services/filterService';
-import PropTypes from 'prop-types';
 import GoogleMap from '../GoogleMap';
 import Carousel from 'react-elastic-carousel';
+import Card from '../Card';
+import Slider from './Slider';
 
 
 // Services
@@ -33,38 +34,93 @@ function Random() {
   
 
   
-  
+  const breakPoints = [
+    { width: 1, itemsToShow: 1 },
+    { width: 550, itemsToShow: 2, itemsToScroll: 2 },
+    { width: 768, itemsToShow: 3 },
+    { width: 1200, itemsToShow: 4 }
+  ];
+
   
    
 
 
   
   
-    return (
-      <div className="filters">
+  return (
+    <div className="filters">
         
-        <Carousel>
+        
+        <Carousel breakPoints={breakPoints}>
+  {/* <main> */}
+  {
+        filters && filters.map((filter) => (
+          <card classes="mr">
+         <div  key={filter._id}> 
+      {/* <Card className="mr" key={filter._id} > */}
+            <div>
 
-        {
-                filters && filters.map((filter) => (
-                    <div key={filter._id}>
-                    <h3>
-                      {filter.activityName}
-                    </h3>
-                    <p>{filter.description}</p>
+
+            
+            <div>
+            
+              <Slider>
+                
+                    <Card.Image src={filter.image} />
                     
-                    </div>
+                    {/* <Card.Body> */}
 
-                ))
-            }
+                  <Card.Title>
 
-        </Carousel>
-        <GoogleMap/>
+                    {filter.activityName} 
+                    
+                  </Card.Title> 
+                  
 
+                  <Card.Text>
+                    
+                    {filter.description}
+                    
+     
+                  </Card.Text>
+                  
+
+                  <Card.Button> 
+                    
+                    {filter.website}
+                    
+                  </Card.Button> 
+                  {/* </Card.Body> */}
+          
+              
+                  </Slider>
+                  
+         
+          
+             </div>
+              
            
-        </div>
+          
+            </div>
 
-    );
+            
+
+            </div>
+            
+          </card>
+
+
+            ))
+        }
+      {/* </main> */}
+     
+      </Carousel>
+     
+      <GoogleMap/>
+          
+    </div>
+
+);
 }
 
 
