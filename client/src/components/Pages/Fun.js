@@ -87,11 +87,14 @@ function Fun() {
                       </Card.Text>
                       
 
+                      <a href ={filter.website} target="_blank">
                       <Card.Button> 
                         
-                        {filter.website}
+                          {/* {filter.website} */}
+                          <h3>More Details</h3>
                         
                       </Card.Button> 
+                      </a> 
                       {/* </Card.Body> */}
               
                   

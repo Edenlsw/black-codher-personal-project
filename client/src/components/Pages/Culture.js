@@ -80,11 +80,14 @@ function Culture() {
                   </Card.Text>
                   
 
-                  <Card.Button> 
-                    
-                    {filter.website}
-                    
-                  </Card.Button> 
+                  <a href ={filter.website} target="_blank">
+                      <Card.Button> 
+                        
+                          {/* {filter.website} */}
+                          <h3>More Details</h3>
+                        
+                      </Card.Button> 
+                      </a>
                   {/* </Card.Body> */}
           
               
