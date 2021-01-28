@@ -86,23 +86,22 @@ function Family() {
                         
                         {filter.description}
                         
-         
+
                       </Card.Text>
                       
-                        <Link to={filter.website} target="_blank">
+                        <a href ={filter.website} target="_blank">
                       <Card.Button> 
                         
                           {/* {filter.website} */}
                           <h3>More Details</h3>
                         
                       </Card.Button> 
-                      </Link>
+                      </a>
                       {/* </Card.Body> */}
               
                   
                       </Slider>
-                      
-             
+
               
                  </div>
                   

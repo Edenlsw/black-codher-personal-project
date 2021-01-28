@@ -3,6 +3,8 @@ import filterService from '../../services/filterService';
 import GoogleMap from '../GoogleMap';
 import Carousel from 'react-elastic-carousel';
 // import './Nature.css';
+import { Link } from 'react-router-dom';
+
 
 import Card from '../Card';
 import Slider from './Slider';
@@ -90,11 +92,14 @@ function Nature() {
                       </Card.Text>
                       
 
+                      <Link to={filter.website} target="_blank">
                       <Card.Button> 
                         
-                        {filter.website}
+                          {/* {filter.website} */}
+                          <h3>More Details</h3>
                         
                       </Card.Button> 
+                      </Link>
                       {/* </Card.Body> */}
               
                   
