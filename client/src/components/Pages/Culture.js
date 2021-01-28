@@ -47,12 +47,10 @@ function Culture() {
         
         
         <Carousel breakPoints={breakPoints}>
-  {/* <main> */}
   {
         filters && filters.map((filter) => (
           <card classes="mr">
          <div  key={filter._id}> 
-      {/* <Card className="mr" key={filter._id} > */}
             <div>
 
 
@@ -63,7 +61,6 @@ function Culture() {
                 
                     <Card.Image src={filter.image} />
                     
-                    {/* <Card.Body> */}
 
                   <Card.Title>
 
@@ -79,16 +76,14 @@ function Culture() {
      
                   </Card.Text>
                   
-
+                {/* links to activity website */}
                   <a href ={filter.website} target="_blank">
                       <Card.Button> 
                         
-                          {/* {filter.website} */}
                           <h3>More Details</h3>
                         
                       </Card.Button> 
                       </a>
-                  {/* </Card.Body> */}
           
               
                   </Slider>
@@ -110,7 +105,6 @@ function Culture() {
 
             ))
         }
-      {/* </main> */}
      
       </Carousel>
      
