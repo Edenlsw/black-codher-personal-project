@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+
 import filterService from '../../services/filterService';
 import Carousel from 'react-elastic-carousel';
 import Card from '../Card';
@@ -43,9 +45,14 @@ function Family() {
   ];
 
   
+
+
   
   
-    return (
+  return (
+      
+  
+          
         <div className="filters">
             
             
@@ -82,12 +89,14 @@ function Family() {
          
                       </Card.Text>
                       
-
+                        <Link to={filter.website} target="_blank">
                       <Card.Button> 
                         
-                        {filter.website}
+                          {/* {filter.website} */}
+                          <h3>More Details</h3>
                         
                       </Card.Button> 
+                      </Link>
                       {/* </Card.Body> */}
               
                   

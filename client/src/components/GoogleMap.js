@@ -8,7 +8,7 @@ import PlacesAutocomplete, {
 //   style to change size of map 
   const style = {
     width: '100%',
-    height: '40%'
+    height: '50%'
   }
 
 export class MapContainer extends Component {

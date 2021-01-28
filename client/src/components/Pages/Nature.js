@@ -3,7 +3,7 @@ import filterService from '../../services/filterService';
 import GoogleMap from '../GoogleMap';
 import Carousel from 'react-elastic-carousel';
 // import './Nature.css';
-import './Neonbtns.css';
+
 import Card from '../Card';
 import Slider from './Slider';
 

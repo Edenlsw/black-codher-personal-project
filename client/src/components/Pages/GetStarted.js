@@ -2,6 +2,7 @@
 import React from 'react';
 import FilterButton, { FilterButtonFamily, FilterButtonFamilyNew, FilterButtonRandom, FilterButtonRandomNew, FilterButtonFun, FilterButtonFunNew,  FilterButtonNature,  FilterButtonNatureNew, FilterButtonCulture, FilterButtonCultureNew, FilterButtonActive, FilterButtonActiveNew } from '../FilterButton';
 import './GetStarted.css'
+import './Neonbtns.css';
 
 // import Navbar from '../Navbar';
 
