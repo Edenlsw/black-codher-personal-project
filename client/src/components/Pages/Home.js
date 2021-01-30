@@ -5,6 +5,7 @@ import LandingPage from '../LandingPage';
 import About from '../Pages/About';
 import HowItWorks from './HowItWorks';
 import GetStarted from './GetStarted';
+import Footer from '../Footer';
 
 
 
@@ -15,6 +16,7 @@ function Home() {
             <About />
             <HowItWorks />
             <GetStarted />
+            <Footer />
             
         </>
     )

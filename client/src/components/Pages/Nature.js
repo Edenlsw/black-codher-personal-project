@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import filterService from '../../services/filterService';
 import GoogleMap from '../GoogleMap';
 import Carousel from 'react-elastic-carousel';
-// import './Nature.css';
+import './Nature.css';
 import { Link } from 'react-router-dom';
 
 
@@ -64,7 +64,6 @@ function Nature() {
             filters && filters.map((filter) => (
               <card classes="mr">
              <div  key={filter._id}> 
-          {/* <Card className="mr" key={filter._id} > */}
                 <div>
 
 
@@ -75,7 +74,7 @@ function Nature() {
                     
                         <Card.Image src={filter.image} />
                         
-                        {/* <Card.Body> */}
+                        <Card.Body>
 
                       <Card.Title>
   
@@ -100,7 +99,7 @@ function Nature() {
                         
                       </Card.Button> 
                       </a>
-                      {/* </Card.Body> */}
+                      </Card.Body>
               
                   
                       </Slider>
