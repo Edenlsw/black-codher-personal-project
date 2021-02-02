@@ -3,11 +3,12 @@ import { Map, Marker, GoogleApiWrapper} from 'google-maps-react';
 import PlacesAutocomplete, {
     geocodeByAddress,
     getLatLng,
-  } from 'react-places-autocomplete';
+} from 'react-places-autocomplete';
+// import './GoogleMaps.css'
 
 //   style to change size of map 
   const style = {
-    width: '100%',
+    width: '50%',
     height: '50%'
   }
 
@@ -88,7 +89,7 @@ export class MapContainer extends Component {
                         <div>
                             
                             {/* search bar  */}
-                    <input
+                    <input className="search-bar"
                     {...getInputProps({
                         placeholder: 'Search Places ...',
                         className: 'location-search-input',

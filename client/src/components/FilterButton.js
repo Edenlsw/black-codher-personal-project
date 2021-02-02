@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-// import '../components/FilterButton.css';
-// import './FilterButtos.css';
+
 import './FilterButton.css';
 
 

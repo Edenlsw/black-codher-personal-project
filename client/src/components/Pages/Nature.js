@@ -8,6 +8,8 @@ import { Link } from 'react-router-dom';
 
 import Card from '../Card';
 import Slider from './Slider';
+import { Container } from '../styles/Card';
+import { Row } from 'react-bootstrap';
 
 
 
@@ -55,7 +57,11 @@ function Nature() {
   
   
     return (
-        <div className="filters">
+      <div className="filters">
+        <Container>
+          <Row></Row>
+          <Row></Row>
+        </Container>
             
             
             <Carousel breakPoints={breakPoints}>
@@ -125,7 +131,8 @@ function Nature() {
          
           </Carousel>
          
-          <GoogleMap/>
+        
+          {/* <GoogleMap/> */}
               
         </div>
 

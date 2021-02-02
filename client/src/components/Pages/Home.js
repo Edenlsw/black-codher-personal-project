@@ -15,7 +15,7 @@ function Home() {
             <LandingPage />
             <About />
             <HowItWorks />
-            <GetStarted />
+            {/* <GetStarted /> */}
             <Footer />
             
         </>
