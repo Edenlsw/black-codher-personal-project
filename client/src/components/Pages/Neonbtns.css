@@ -18,11 +18,11 @@
   width: 300px;
   padding: 20px;
   font-size: 35px;
-  color: #7fffd4;
+  color: #838384;
   background-color: Transparent;
   font-family: poppins;
   font-weight: 400;
-  border: 5px solid  #7fffd4 ;
+  border: 5px solid  #838384 ;
   text-transform: uppercase;
   letter-spacing: 15px;
   cursor: pointer;
@@ -33,10 +33,10 @@
 
 
 .funbtns:hover {
-  box-shadow: 0 5px 50px 0 #7fffd4 inset,
-               0 5px 50px 0 #7fffd4;
-  text-shadow: 0 0 5px #7fffd4,
-                  0 0 5px #7fffd4;
+  box-shadow: 0 5px 50px 0 #838384 inset,
+               0 5px 50px 0 #838384;
+  text-shadow: 0 0 5px #838384,
+                  0 0 5px #838384;
 }
 
 
