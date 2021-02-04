@@ -8,8 +8,8 @@ import PlacesAutocomplete, {
 
 //   style to change size of map 
   const style = {
-    width: '50%',
-    height: '50%'
+    height: '500px',
+    width: '95%'
   }
 
 export class MapContainer extends Component {
@@ -76,7 +76,14 @@ export class MapContainer extends Component {
     render() {
        
         return (
-            <div id="googleMap">
+            <div id="googleMap" 
+            style={{
+              position: "relative",
+              width: "89%",
+              height: "500px",
+              margin: "100px 160px 100px 160px"
+            
+            }} >
                 
 
                 
