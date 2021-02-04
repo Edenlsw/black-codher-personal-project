@@ -35,7 +35,9 @@ function Navbar() {
                     {/* logo click closes menu bar  */}
                     <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
                         {/* GoWander  */}
-                         <img src={smallLogo}/>
+                        <div className='new-logo'>
+                            <img src={smallLogo} class="thelogo"/>
+                        </div>
                     </Link>
                     {/* toggle between bars navbar */}
                     <div className="menu-icon" onClick={handleClick}>

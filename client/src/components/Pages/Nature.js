@@ -129,7 +129,7 @@ function Nature() {
 
 
           <Row>
-          <GoogleMap/>
+
 
           </Row>
         </Container>
