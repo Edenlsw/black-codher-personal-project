@@ -59,13 +59,9 @@ function Nature() {
     return (
       <div className="filters">
         <Container>
-          <Row></Row>
-          <Row></Row>
-        </Container>
-            
-            
-            <Carousel breakPoints={breakPoints}>
-      {/* <main> */}
+          <Row>
+          <Carousel breakPoints={breakPoints}>
+      
       {
             filters && filters.map((filter) => (
               <card classes="mr">
@@ -100,7 +96,6 @@ function Nature() {
                       <a href ={filter.website} target="_blank">
                       <Card.Button> 
                         
-                          {/* {filter.website} */}
                           <h3>More Details</h3>
                         
                       </Card.Button> 
@@ -127,10 +122,20 @@ function Nature() {
 
                 ))
             }
-          {/* </main> */}
          
           </Carousel>
          
+          </Row>
+
+
+          <Row>
+          <GoogleMap/>
+
+          </Row>
+        </Container>
+            
+          
+           
         
           {/* <GoogleMap/> */}
               

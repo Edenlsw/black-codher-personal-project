@@ -1,3 +1,19 @@
+img {
+  height: 60px;
+  width: 60px;
+  justify-self: start;
+  margin-left: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+ 
+}
+
+
+
 .navbar {
   /* background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%); */
   background-color: #838384;
@@ -20,7 +36,7 @@
   max-width: 1500px;
 }
 
-.navbar-logo {
+/* .navbar-logo {
   color: #fff;
   justify-self: start;
   margin-left: 20px;
@@ -29,7 +45,11 @@
   font-size: 2rem;
   display: flex;
   align-items: center;
-}
+ 
+    
+
+  
+} */
 
 .fa-typo3 {
   margin-left: 0.5rem;
@@ -77,6 +97,15 @@
   display: none;
 }
 
+
+
+
+
+/* responsive css */
+
+/* screen size laptop - pc */
+
+
 @media screen and (max-width: 960px) {
   .NavbarItems {
     position: relative;
@@ -118,12 +147,22 @@
     border-radius: 0;
   }
 
-  .navbar-logo {
+  img {
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    transform: translate(25%, 50%);
+    margin-top: -20px;
+    /* margin-bottom: 6px; */
+  }
+
+
+  /* .navbar-logo {
     position: absolute;
     top: 0;
     left: 0;
     transform: translate(25%, 50%);
-  }
+  } */
 
   .menu-icon {
     display: block;
@@ -161,3 +200,36 @@
     transition: 250ms;
   }
 }
+
+
+
+
+
+
+
+
+/* tablet size */
+@media screen and (max-width: 768px) {
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(25%, 50%);
+    margin-bottom: 10px;
+  }
+
+  
+}
+
+/* phone size */
+@media screen and (max-width: 480px) {
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(25%, 50%);
+    margin-bottom: 6px;
+  }
+
+  
+} 

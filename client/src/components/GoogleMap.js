@@ -88,7 +88,9 @@ export class MapContainer extends Component {
                 {({ getInputProps, suggestions, getSuggestionItemProps, loading }) => (
                         <div>
                             
-                            {/* search bar  */}
+                  {/* search bar  */}
+                  
+
                     <input className="search-bar"
                     {...getInputProps({
                         placeholder: 'Search Places ...',
@@ -101,6 +103,8 @@ export class MapContainer extends Component {
                         const className = suggestion.active
                         ? 'suggestion-item--active'
                         : 'suggestion-item';
+                      
+                      
                         // inline style for demonstration purpose
                         const style = suggestion.active
                         ? { backgroundColor: '#fafafa', cursor: 'pointer' }
@@ -125,6 +129,7 @@ export class MapContainer extends Component {
                 <Map
                     google={this.props.google}
                     //   centers map to brum
+              
                     style={style}
                     initialCenter= {{
                         lat: this.state.mapCenter.lat,

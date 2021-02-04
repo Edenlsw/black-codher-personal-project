@@ -2,6 +2,7 @@ import { set } from 'mongoose';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from './Button';
+import smallLogo from '../components/images/smallLogo.png';
 import './Navbar.css'
 
 
@@ -33,7 +34,8 @@ function Navbar() {
                 <div className="navbar-container">
                     {/* logo click closes menu bar  */}
                     <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-                        GoWander 
+                        {/* GoWander  */}
+                         <img src={smallLogo}/>
                     </Link>
                     {/* toggle between bars navbar */}
                     <div className="menu-icon" onClick={handleClick}>
