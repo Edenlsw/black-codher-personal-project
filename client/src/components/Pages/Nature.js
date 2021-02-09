@@ -58,8 +58,6 @@ function Nature() {
   
     return (
       <div className="filters">
-        <Container>
-          <Row>
           <Carousel breakPoints={breakPoints}>
       
       {
@@ -125,19 +123,14 @@ function Nature() {
          
           </Carousel>
          
-          </Row>
 
 
-          <Row>
-
-
-          </Row>
-        </Container>
+          
             
           
            
         
-          {/* <GoogleMap/> */}
+          <GoogleMap/>
               
         </div>
 

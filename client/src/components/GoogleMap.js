@@ -4,13 +4,13 @@ import PlacesAutocomplete, {
     geocodeByAddress,
     getLatLng,
 } from 'react-places-autocomplete';
-// import './GoogleMaps.css'
+import './GoogleMaps.css'
 
 //   style to change size of map 
-  const style = {
-    height: '500px',
-    width: '95%'
-  }
+  // const style = {
+  //   height: '500px',
+  //   width: '95%'
+  // }
 
 export class MapContainer extends Component {
 
@@ -75,18 +75,30 @@ export class MapContainer extends Component {
    
     render() {
        
-        return (
+      return (
+        <div className="map-wrapper"
+          style={{
+            maxwidth: "500px"
+        }}>
             <div id="googleMap" 
-            style={{
-              position: "relative",
-              width: "89%",
-              height: "500px",
-              margin: "100px 160px 100px 160px"
+              style={{
+                position: "relative",
+                width: "100%",
+                height: "650px",
+                margin: "100px 0"
+              
+              }} >
+          
             
-            }} >
                 
 
-                
+            <div id="the-search-bar"
+            style={{
+              // width: "89%",
+              // height: "30px",
+              
+            
+            }}> 
             <PlacesAutocomplete
                 value={this.state.address}
                 onChange={this.handleChange}
@@ -97,13 +109,13 @@ export class MapContainer extends Component {
                             
                   {/* search bar  */}
                   
-
-                    <input className="search-bar"
+                  <input className="search-bar"
                     {...getInputProps({
                         placeholder: 'Search Places ...',
                         className: 'location-search-input',
                     })}
                     />
+                   
                     <div className="autocomplete-dropdown-container">
                     {loading && <div>Loading...</div>}
                     {suggestions.map(suggestion => {
@@ -130,14 +142,15 @@ export class MapContainer extends Component {
                     </div>
                 </div>
                 )}
-            </PlacesAutocomplete>
+              </PlacesAutocomplete>
+              </div>
 
 
                 <Map
                     google={this.props.google}
                     //   centers map to brum
               
-                    style={style}
+                    // style={style}
                     initialCenter= {{
                         lat: this.state.mapCenter.lat,
                         lng: this.state.mapCenter.lng
@@ -170,7 +183,7 @@ export class MapContainer extends Component {
             </div>
             
             
-              
+              </div> 
           
       )
     
@@ -185,6 +198,15 @@ export class MapContainer extends Component {
 
 
 export default GoogleApiWrapper({
+
+//   <iframe
+//   width = "600".
+//   height = "450",
+//   frameborder = "0" style = "border:0",
+//   src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDrwa39T76pJiQ4RacPO21G8GzPkbGR3LY&q=Space+Needle,Seattle+WA" allowfullscreen>
+// </iframe>
+
+
     apiKey: ('AIzaSyDrwa39T76pJiQ4RacPO21G8GzPkbGR3LY')
     
 }) (MapContainer)
