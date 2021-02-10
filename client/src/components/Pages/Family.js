@@ -60,7 +60,7 @@ function Family() {
       {/* <main> */}
       {
             filters && filters.map((filter) => (
-              <card classes="mr">
+              // <card classes="mr">
              <div  key={filter._id}> 
           {/* <Card className="mr" key={filter._id} > */}
                 <div>
@@ -113,7 +113,7 @@ function Family() {
    
                 </div>
                 
-              </card>
+              // </card>
    
 
                 ))
