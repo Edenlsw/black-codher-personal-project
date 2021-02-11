@@ -6,6 +6,8 @@ export const Container = styled.div`
   min-width: 0;
   // max-width: 300px;
   max-height: 100px;
+  // height: 100px;
+
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
@@ -36,18 +38,24 @@ export const Title = styled.h1`
 
 export const Text = styled.p`
   line-height: 20px;
+  // margin: 28px 15px 0 px 15px;
   margin-left: 15px;
   margin-right: 15px;
+  margin-top: 20px;
   color: #6c757d;
   text-align: center;
   width: 90%;
+  text-align: left;
 
 `;
 
 export const Image = styled.img`
   width: 100%;
-  height: 300px;
+  // width: 300px;
+  height: 200px;
   display: block;
+  // margin-top: -20px;
+  // object-fit: cover;
 
   `;
 

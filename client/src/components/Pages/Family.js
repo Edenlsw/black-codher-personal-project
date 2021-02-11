@@ -25,9 +25,7 @@ function Family() {
       
         const getfilters = async () => {
           let res = await filterService.getAll();
-          console.log(res)
           const filtered = res.filter(e => (e.filterCategory.includes("family")));
-          console.log(filtered)
           setfilters(filtered);
   };
   
@@ -57,47 +55,28 @@ function Family() {
             
             
             <Carousel breakPoints={breakPoints}>
-      {/* <main> */}
+     
       {
             filters && filters.map((filter) => (
-              // <card classes="mr">
+             
              <div  key={filter._id}> 
-          {/* <Card className="mr" key={filter._id} > */}
                 <div>
-
-
-                
                 <div>
-                
                   <Slider>
-                    
                         <Card.Image src={filter.image} />
-                        
-                        {/* <Card.Body> */}
-
+                        <Card.Body>
                       <Card.Title>
-  
                         {filter.activityName} 
-                        
                       </Card.Title> 
-                      
-
                       <Card.Text>
-                        
                         {filter.description}
-                        
-
                       </Card.Text>
-                      
                         <a href ={filter.website} target="_blank">
                       <Card.Button> 
-                        
-                          {/* {filter.website} */}
                           <h3>More Details</h3>
-                        
                       </Card.Button> 
                       </a>
-                      {/* </Card.Body> */}
+                      </Card.Body>
               
                   
                       </Slider>
