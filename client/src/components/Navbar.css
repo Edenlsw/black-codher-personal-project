@@ -36,20 +36,7 @@
   max-width: 1500px;
 }
 
-/* .navbar-logo {
-  color: #fff;
-  justify-self: start;
-  margin-left: 20px;
-  cursor: pointer;
-  text-decoration: none;
-  font-size: 2rem;
-  display: flex;
-  align-items: center;
- 
-    
 
-  
-} */
 
 .fa-typo3 {
   margin-left: 0.5rem;
@@ -147,7 +134,7 @@
     border-radius: 0;
   }
 
-  img {
+  .thelogo {
     /* position: absolute; */
     top: 0;
     left: 0;
@@ -157,12 +144,7 @@
   }
 
 
-  /* .navbar-logo {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(25%, 50%);
-  } */
+
 
   .menu-icon {
     display: block;
@@ -209,8 +191,8 @@
 
 /* tablet size */
 @media screen and (max-width: 768px) {
-  img {
-    position: absolute;
+  .thelogo {
+    position: absolute; 
     top: 0;
     left: 0;
     transform: translate(25%, 50%);
@@ -222,9 +204,9 @@
 
 /* phone size */
 @media screen and (max-width: 480px) {
-  img {
-    position: absolute;
-    top: 0;
+  .thelogo {
+    position: absolute; 
+    top: 0; 
     left: 0;
     transform: translate(25%, 50%);
     margin-bottom: 6px;

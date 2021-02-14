@@ -4,9 +4,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   min-width: 0;
-  // max-width: 300px;
-  max-height: 100px;
-  // height: 100px;
+  height: 650px;
 
   word-wrap: break-word;
   background-color: #fff;
@@ -15,7 +13,7 @@ export const Container = styled.div`
   border-radius: 0.25rem;
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
   overflow: hidden;
-  padding: 2px;
+  // padding: 2px;
 `;
 
 export const Body = styled.div`
@@ -31,16 +29,14 @@ export const Body = styled.div`
 export const Title = styled.h1`
   font-size: 1.25rem;
   font-weight: bold;
-  // margin-left: 15px;
   text-align: center;
   margin: 0;
 `;
 
 export const Text = styled.p`
   line-height: 20px;
-  // margin: 28px 15px 0 px 15px;
-  margin-left: 15px;
-  margin-right: 15px;
+  // margin-left: 15px;
+  // margin-right: 15px;
   margin-top: 20px;
   color: #6c757d;
   text-align: center;
@@ -51,17 +47,25 @@ export const Text = styled.p`
 
 export const Image = styled.img`
   width: 100%;
-  // width: 300px;
-  height: 200px;
-  display: block;
-  // margin-top: -20px;
+  height: 300px;
+  margin-left: -12px;
+  // display: block;
+  // margin-top: 50px;
+  margin-bottom: 50px
   // object-fit: cover;
+  
+
+
+
+  
+
 
   `;
 
 export const Button = styled.button`
   cursor: pointer;
   margin-top: auto;
+  margin-left: -10px;
   width: 100%;
   color: #fff;
   background-color: #28a745;
@@ -78,9 +82,12 @@ export const Button = styled.button`
   border-radius: 0.25rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
   &:hover {
     color: #fff;
     background-color: #218838;
     border-color: #1e7e34;
   }
 `;
+
+

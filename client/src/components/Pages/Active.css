@@ -6,16 +6,16 @@
    /* RESETS
    ============================================ */
    
-   html {
+   /* html {
      -webkit-box-sizing: border-box;
              box-sizing: border-box;
    }
    *, *:before, *:after {
      -webkit-box-sizing: inherit;
              box-sizing: inherit;
-   }
+   } */
    
-   body {
+   /* body {
      margin: 20px 0;
      padding: 0;
      line-height: 1;
@@ -36,4 +36,4 @@
    
    .mr {
      margin-right: 20px;
-   }
+   } */

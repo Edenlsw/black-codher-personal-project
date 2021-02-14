@@ -20,7 +20,7 @@ import { Row } from 'react-bootstrap';
 function Nature() {
     
   const [filters, setfilters] = useState(null);
-  // const [filteredActivity, setFilteredActivity] = useState(null)
+  
   
 
 
@@ -62,7 +62,7 @@ function Nature() {
       
       {
             filters && filters.map((filter) => (
-              <card classes="mr">
+              <Card classes="mr">
              <div  key={filter._id}> 
                 <div>
 
@@ -72,36 +72,35 @@ function Nature() {
                 
                   <Slider>
                      
-                        <Card.Image src={filter.image} />
+                        <Card.Image src={filter.image} alt={filter.activityName}  />
                         
                         <Card.Body>
 
-                      <Card.Title>
-  
-                        {filter.activityName} 
-                        
-                      </Card.Title> 
-                      
+                          <Card.Title>
+      
+                            {filter.activityName} 
+                            
+                          </Card.Title> 
+                          
 
-                      <Card.Text>
-                        
-                        {filter.description}
-                        
+                          <Card.Text>
+                            
+                            {filter.description}
+                            
          
-                      </Card.Text>
-                      
+                          </Card.Text>
+                          
+                          <a href ={filter.website} target="_blank">
+                          <Card.Button> 
+                            
+                              <h3>More Details</h3>
+                            
+                          </Card.Button> 
+                          </a>
                         </Card.Body>
                         
-                      <a href ={filter.website} target="_blank">
-                      <Card.Button> 
-                        
-                          <h3>More Details</h3>
-                        
-                      </Card.Button> 
-                      </a>
+                      
                      
-                        {/* </Card.Body> */}
-                        
                        
                   
                       </Slider>
@@ -118,7 +117,7 @@ function Nature() {
    
                 </div>
                 
-              </card>
+              </Card>
    
 
                 ))
