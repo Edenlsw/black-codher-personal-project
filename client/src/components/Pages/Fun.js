@@ -54,12 +54,10 @@ function Fun() {
             
             
             <Carousel breakPoints={breakPoints}>
-      {/* <main> */}
       {
             filters && filters.map((filter) => (
-              <card classes="mr">
+              <Card classes="mr">
              <div  key={filter._id}> 
-          {/* <Card className="mr" key={filter._id} > */}
                 <div>
 
 
@@ -68,9 +66,8 @@ function Fun() {
                 
                   <Slider>
                     
-                        <Card.Image src={filter.image} />
+                  <Card.Image src={filter.image} alt={filter.activityName}  />
                         
-                        {/* <Card.Body> */}
 
                       <Card.Title>
   
@@ -90,12 +87,10 @@ function Fun() {
                       <a href ={filter.website} target="_blank">
                       <Card.Button> 
                         
-                          {/* {filter.website} */}
                           <h3>More Details</h3>
                         
                       </Card.Button> 
                       </a> 
-                      {/* </Card.Body> */}
               
                   
                       </Slider>
@@ -112,7 +107,7 @@ function Fun() {
    
                 </div>
                 
-              </card>
+              </Card>
    
 
                 ))

@@ -1,13 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import filterService from '../../services/filterService';
-import './Active.css';
 import Card from '../Card';
 import Carousel from 'react-elastic-carousel';
 import GoogleMap from '../GoogleMap';
 import Slider from './Slider';
 
 
-// import Slider from './Slider'
 
 
 
@@ -56,12 +54,10 @@ function Active() {
         
         
         <Carousel breakPoints={breakPoints}>
-  {/* <main> */}
   {
         filters && filters.map((filter) => (
-          <card classes="mr">
+          <Card classes="mr">
          <div  key={filter._id}> 
-      {/* <Card className="mr" key={filter._id} > */}
             <div>
 
 
@@ -70,9 +66,8 @@ function Active() {
             
               <Slider>
                 
-                    <Card.Image src={filter.image} />
+              <Card.Image src={filter.image} alt={filter.activityName}  />
                     
-                    {/* <Card.Body> */}
 
                   <Card.Title>
 
@@ -92,12 +87,10 @@ function Active() {
                   <a href ={filter.website} target="_blank">
                       <Card.Button> 
                         
-                          {/* {filter.website} */}
                           <h3>More Details</h3>
                         
                       </Card.Button> 
                       </a>
-                  {/* </Card.Body> */}
           
               
                   </Slider>
@@ -114,12 +107,11 @@ function Active() {
 
             </div>
             
-          </card>
+          </Card>
 
 
             ))
         }
-      {/* </main> */}
      
       </Carousel>
      

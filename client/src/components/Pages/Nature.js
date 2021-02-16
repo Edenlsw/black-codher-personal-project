@@ -2,14 +2,9 @@ import React, { useState, useEffect } from 'react';
 import filterService from '../../services/filterService';
 import GoogleMap from '../GoogleMap';
 import Carousel from 'react-elastic-carousel';
-// import './Nature.css';
-import { Link } from 'react-router-dom';
-
-
 import Card from '../Card';
 import Slider from './Slider';
-// import { Container } from '../styles/Card';
-import { Row } from 'react-bootstrap';
+
 
 
 

@@ -49,7 +49,7 @@ function Culture() {
         <Carousel breakPoints={breakPoints}>
   {
         filters && filters.map((filter) => (
-          <card classes="mr">
+          <Card classes="mr">
          <div  key={filter._id}> 
             <div>
 
@@ -59,7 +59,7 @@ function Culture() {
             
               <Slider>
                 
-                    <Card.Image src={filter.image} />
+              <Card.Image src={filter.image} alt={filter.activityName}  />
                     
 
                   <Card.Title>
@@ -100,7 +100,7 @@ function Culture() {
 
             </div>
             
-          </card>
+          </Card>
 
 
             ))

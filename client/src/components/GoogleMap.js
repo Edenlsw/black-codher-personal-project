@@ -84,8 +84,8 @@ export class MapContainer extends Component {
               style={{
                 position: "relative",
                 width: "100%",
-                height: "500px",
-                margin: "100px 0"
+                height: "400px",
+                margin: "100px 0  ",
               
               }} >
           

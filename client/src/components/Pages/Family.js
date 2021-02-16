@@ -58,12 +58,12 @@ function Family() {
      
       {
             filters && filters.map((filter) => (
-             
+              <Card classes="mr">
              <div  key={filter._id}> 
                 <div>
                 <div>
                   <Slider>
-                        <Card.Image src={filter.image} />
+                  <Card.Image src={filter.image} alt={filter.activityName}  />
                         <Card.Body>
                       <Card.Title>
                         {filter.activityName} 
@@ -92,12 +92,11 @@ function Family() {
    
                 </div>
                 
-              // </card>
+               </Card>
    
 
                 ))
             }
-          {/* </main> */}
          
           </Carousel>
          
