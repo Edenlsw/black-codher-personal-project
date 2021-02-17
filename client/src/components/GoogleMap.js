@@ -1,9 +1,6 @@
 import { Component } from 'react';
-import { Map, Marker, GoogleApiWrapper} from 'google-maps-react';
-import PlacesAutocomplete, {
-    geocodeByAddress,
-    getLatLng,
-} from 'react-places-autocomplete';
+import { Map, Marker, GoogleApiWrapper, InfoWindow} from 'google-maps-react';
+import PlacesAutocomplete, {geocodeByAddress, getLatLng, } from 'react-places-autocomplete';
 import './GoogleMaps.css'
 
 //   style to change size of map 
@@ -61,7 +58,7 @@ export class MapContainer extends Component {
         showingInfoWindow: true
       });
    
-    onMapClicked = (props) => {
+    onClose = props => {
       if (this.state.showingInfoWindow) {
         this.setState({
           showingInfoWindow: false,
@@ -119,12 +116,12 @@ export class MapContainer extends Component {
                     <div className="autocomplete-dropdown-container">
                     {loading && <div>Loading...</div>}
                     {suggestions.map(suggestion => {
-                        const className = suggestion.active
+                        const className = suggestion.active 
                         ? 'suggestion-item--active'
                         : 'suggestion-item';
                       
                       
-                        // inline style for demonstration purpose
+                        // inline style 
                         const style = suggestion.active
                         ? { backgroundColor: '#fafafa', cursor: 'pointer' }
                         : { backgroundColor: '#ffffff', cursor: 'pointer' };
@@ -162,20 +159,28 @@ export class MapContainer extends Component {
                 >
                     
 
-                    <Marker
-                        position={{
-                            lat: this.state.mapCenter.lat,
-                            lng: this.state.mapCenter.lng
+              <Marker
+                onClick={this.onMarkerClick}
+                name={'Sea Life Center'}
+                position={{
+                  lat: this.state.mapCenter.lat,
+                  lng: this.state.mapCenter.lng
               
-                        }} />
+                }}
+                
+              />
+              
                     
-                    <Marker
-                        title={'The marker`s title will appear as a tooltip.'}
-                        
-                        name={'SOMA'}
-                        
-                        position={{ lat: 52.47945834465894, lng: -1.9108482125901436}} />
-                    
+              <InfoWindow
+                
+                marker={this.state.activeMarker}
+                visible={this.state.showingInfoWindow}
+                onClose={this.onClose}
+                 >
+                <div>
+                   <h4>{this.state.selectedPlace.name}</h4>
+                </div>
+              </InfoWindow>
       
                 
                 </Map>
