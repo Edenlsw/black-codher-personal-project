@@ -212,7 +212,7 @@ export default GoogleApiWrapper({
 // </iframe>
 
 
-    apiKey: ('AIzaSyDrwa39T76pJiQ4RacPO21G8GzPkbGR3LY')
+    apiKey: ('AIzaSyBZVT9pIv2QBwmDQincmCElJlvlHC4T004')
     
 }) (MapContainer)
   
