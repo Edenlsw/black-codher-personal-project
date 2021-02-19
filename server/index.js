@@ -2,8 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 
-// IMPORT YOUR MODELS
-require('./models/Users');
+// IMPORT  MODEL
 require('./models/Filters');
 
 const app = express();
@@ -20,14 +19,6 @@ mongoose.connect(
 
 app.use(bodyParser.json());
 
-// IMPORT YOUR ROUTES
-
-// require('./routes/usersRoutes')(app);
-
-// const PORT = process.env.PORT || 5000;
-// app.listen(PORT, () => {
-//   console.log(`app running on port ${PORT}`);
-// });
 
 
 require('./routes/filterRoutes')(app);
